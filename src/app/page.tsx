@@ -26,15 +26,17 @@ async function MoviesList() {
 	const { data: movies, error } = await supabase
 		.from("movies")
 		.select()
-		.limit(5);
+		.range(50, 70);
 
 	if (error) console.log("❗ supabase error:", error);
 
 	return movies && movies.length > 0 ? (
-		<section className="">
-			{[...movies].reverse().map((movie: Movie) => (
-				<MovieCard key={movie.id} movie={movie} />
-			))}
+		<section className="section-wrapper">
+			<div className="movie-grid">
+				{[...movies].reverse().map((movie: Movie) => (
+					<MovieCard key={movie.id} movie={movie} />
+				))}
+			</div>
 		</section>
 	) : (
 		<section>

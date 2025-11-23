@@ -1,0 +1,12 @@
+/* ------------------------------------======
+======---------------------------------======
+	Layout
+======---------------------------------======
+======---------------------------------=== */
+.section-wrapper {
+	max-width: calc(var(--page-max-width) + (var(--page-padding) * 2));
+
+	padding-block: var(--page-padding);
+	padding-inline: var(--page-padding);
+	margin-inline: auto;
+}

@@ -1,6 +1,8 @@
 :root {
 	--font-sans: "Figtree", sans-serif;
 
+	--content-gap: clamp(1.5rem, 1.273rem + 0.97vw, 2rem);
+
 	--page-max-width: var(--ds-theme-sizing-container-page-max);
 	--page-padding: clamp(1.5rem, 0.818rem + 2.91vw, 3rem);
 	--wrapper-fluid: max(
