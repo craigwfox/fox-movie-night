@@ -1,0 +1,262 @@
+// ---------------------------------------------
+// ======---------------------------------======
+//  SPACING UTILITY CLASSES
+// ======---------------------------------======
+// ---------------------------------------------
+
+@use "../abstracts/variables" as *;
+
+// =======------------====
+//  MARGIN
+// =======------------====
+
+.ds-u-margin-none {
+	margin: 0 !important;
+}
+
+.ds-u-margin-sm {
+	margin: size(1) !important;
+}
+
+.ds-u-margin-md {
+	margin: size(2) !important;
+}
+
+.ds-u-margin-lg {
+	margin: size(3) !important;
+}
+
+.ds-u-margin-xl {
+	margin: size(4) !important;
+}
+
+.ds-u-margin-xxl {
+	margin: size(8) !important;
+}
+
+.ds-u-margin-top-none {
+	margin-block-start: 0 !important;
+}
+
+.ds-u-margin-top-sm {
+	margin-block-start: size(1) !important;
+}
+
+.ds-u-margin-top-md {
+	margin-block-start: size(2) !important;
+}
+
+.ds-u-margin-top-lg {
+	margin-block-start: size(3) !important;
+}
+
+.ds-u-margin-top-xl {
+	margin-block-start: size(4) !important;
+}
+
+.ds-u-margin-top-xxl {
+	margin-block-start: size(8) !important;
+}
+
+.ds-u-margin-right-none {
+	margin-inline-end: 0 !important;
+}
+
+.ds-u-margin-right-sm {
+	margin-inline-end: size(1) !important;
+}
+
+.ds-u-margin-right-md {
+	margin-inline-end: size(2) !important;
+}
+
+.ds-u-margin-right-lg {
+	margin-inline-end: size(3) !important;
+}
+
+.ds-u-margin-right-xl {
+	margin-inline-end: size(4) !important;
+}
+
+.ds-u-margin-right-xxl {
+	margin-inline-end: size(8) !important;
+}
+
+.ds-u-margin-bottom-none {
+	margin-block-end: 0 !important;
+}
+
+.ds-u-margin-bottom-sm {
+	margin-block-end: size(1) !important;
+}
+
+.ds-u-margin-bottom-md {
+	margin-block-end: size(2) !important;
+}
+
+.ds-u-margin-bottom-lg {
+	margin-block-end: size(3) !important;
+}
+
+.ds-u-margin-bottom-xl {
+	margin-block-end: size(4) !important;
+}
+
+.ds-u-margin-bottom-xxl {
+	margin-block-end: size(8) !important;
+}
+
+.ds-u-margin-bottom-xl-xxl {
+	margin-block-end: size(4) !important;
+
+	@media all and (min-width: $ds-bp-md) {
+		margin-block-end: size(8) !important;
+	}
+}
+
+.ds-u-margin-left-none {
+	margin-inline-start: 0 !important;
+}
+
+.ds-u-margin-left-sm {
+	margin-inline-start: size(1) !important;
+}
+
+.ds-u-margin-left-md {
+	margin-inline-start: size(2) !important;
+}
+
+.ds-u-margin-left-lg {
+	margin-inline-start: size(3) !important;
+}
+
+.ds-u-margin-left-xl {
+	margin-inline-start: size(4) !important;
+}
+
+.ds-u-margin-left-xxl {
+	margin-inline-start: size(8) !important;
+}
+
+// =======------------====
+//  PADDING
+// =======------------====
+.ds-u-padding-none {
+	padding: 0 !important;
+}
+
+.ds-u-padding-sm {
+	padding: size(1) !important;
+}
+
+.ds-u-padding-md {
+	padding: size(2) !important;
+}
+
+.ds-u-padding-lg {
+	padding: size(3) !important;
+}
+
+.ds-u-padding-xl {
+	padding: size(4) !important;
+}
+
+.ds-u-padding-xxl {
+	padding: size(8) !important;
+}
+
+.ds-u-padding-top-none {
+	padding-block-start: 0 !important;
+}
+
+.ds-u-padding-top-sm {
+	padding-block-start: size(1) !important;
+}
+
+.ds-u-padding-top-md {
+	padding-block-start: size(2) !important;
+}
+
+.ds-u-padding-top-lg {
+	padding-block-start: size(3) !important;
+}
+
+.ds-u-padding-top-xl {
+	padding-block-start: size(4) !important;
+}
+
+.ds-u-padding-top-xxl {
+	padding-block-start: size(8) !important;
+}
+
+.ds-u-padding-right-none {
+	padding-inline-end: 0 !important;
+}
+
+.ds-u-padding-right-sm {
+	padding-inline-end: size(1) !important;
+}
+
+.ds-u-padding-right-md {
+	padding-inline-end: size(2) !important;
+}
+
+.ds-u-padding-right-lg {
+	padding-inline-end: size(3) !important;
+}
+
+.ds-u-padding-right-xl {
+	padding-inline-end: size(4) !important;
+}
+
+.ds-u-padding-right-xxl {
+	padding-inline-end: size(8) !important;
+}
+
+.ds-u-padding-bottom-none {
+	padding-block-end: 0 !important;
+}
+
+.ds-u-padding-bottom-sm {
+	padding-block-end: size(1) !important;
+}
+
+.ds-u-padding-bottom-md {
+	padding-block-end: size(2) !important;
+}
+
+.ds-u-padding-bottom-lg {
+	padding-block-end: size(3) !important;
+}
+
+.ds-u-padding-bottom-xl {
+	padding-block-end: size(4) !important;
+}
+
+.ds-u-padding-bottom-xxl {
+	padding-block-end: size(8) !important;
+}
+
+.ds-u-padding-left-none {
+	padding-inline-start: 0 !important;
+}
+
+.ds-u-padding-left-sm {
+	padding-inline-start: size(1) !important;
+}
+
+.ds-u-padding-left-md {
+	padding-inline-start: size(2) !important;
+}
+
+.ds-u-padding-left-lg {
+	padding-inline-start: size(3) !important;
+}
+
+.ds-u-padding-left-xl {
+	padding-inline-start: size(4) !important;
+}
+
+.ds-u-padding-left-xxl {
+	padding-inline-start: size(8) !important;
+}

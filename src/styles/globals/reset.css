@@ -10,11 +10,9 @@ html {
 
 body {
 	margin: 0;
-	padding: 2rem;
+	padding: 0;
 
-	@media (width < 500px) {
-		padding: 1rem;
-	}
+	background: var(--ds-theme-color-background-reverse);
 }
 
 *,

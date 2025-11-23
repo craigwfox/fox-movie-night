@@ -1,3 +1,10 @@
 :root {
 	--font-sans: "Figtree", sans-serif;
+
+	--page-max-width: var(--ds-theme-sizing-container-page-max);
+	--page-padding: clamp(1.5rem, 0.818rem + 2.91vw, 3rem);
+	--wrapper-fluid: max(
+		var(--page-padding),
+		(100% - (var(--page-max-width) - (var(--page-padding) * 2))) / 2
+	);
 }

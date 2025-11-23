@@ -6,8 +6,10 @@
 /* ====---------------====
 	Resets/globals
 =======---------------= */
-@import "globals/variables.css" layer(globals);
+@import "./tokens/default/build/css/tokens.css" layer(globals);
+/*@import "./tokens/light/build/css/tokens.css";*/
 @import "globals/reset.css" layer(globals);
+@import "globals/variables.css" layer(globals);
 
 /* ====---------------====
 	Composition

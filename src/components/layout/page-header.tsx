@@ -1,10 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
+import LogoDark from "@/src/images/logo-dark.svg";
 
 export default function PageHeader() {
 	return (
 		<header className="page-header">
-			<h1>What have we watched?</h1>
-			<nav className="page-nav" aria-label="Primary">
+			<Link href="/">
+				<Image
+					src={LogoDark}
+					alt="What have we watched"
+					width={157}
+					height={56}
+					className="object-contain"
+				/>
+			</Link>
+			<nav className="page-header__nav" aria-label="Primary">
 				<ul>
 					<li>
 						<Link href="/">Home</Link>

@@ -1,8 +1,52 @@
+/* ------------------------------------======
+======---------------------------------======
+	Page header
+======---------------------------------======
+======---------------------------------=== */
+
 .page-header {
+	max-width: var(--page-max-width);
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	gap: var(--ds-spacing-16) var(--ds-spacing-24);
 
-	padding: 2rem 1rem;
+	margin-inline: auto;
+	padding: clamp(1rem, 0.773rem + 0.97vw, 1.5rem) var(--page-padding);
+
+	border-block-end: 4px solid var(--ds-theme-color-border-brand-alt-subtle);
+
+	@media (min-width: 450px) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.page-header__nav {
+	ul {
+		display: flex;
+		align-items: center;
+		gap: var(--ds-spacing-24);
+		list-style: none;
+	}
+
+	li {
+		font-family: var(--ds-theme-typography-body-default-font-family);
+		font-size: var(--ds-theme-typography-body-default-font-size);
+		font-weight: var(--ds-theme-typography-body-lg-font-weight);
+		line-height: var(--ds-theme-typography-body-default-line-height);
+	}
+
+	a {
+		color: var(--ds-theme-link-alt-default);
+		text-decoration-color: var(--ds-theme-link-alt-default);
+		text-decoration-thickness: 0.15em;
+		text-underline-offset: 0.2em;
+
+		&:hover,
+		&:focus {
+			color: var(--ds-theme-link-alt-hover);
+		}
+	}
 }
