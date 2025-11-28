@@ -9,6 +9,7 @@
 		"test": "vitest",
 		"lint": "eslint",
 		"format": "prettier --write .",
+		"type-check": "tsc",
 		"generate:tokens": "node scripts/generate-custom-data-from-json.js"
 	},
 	"dependencies": {

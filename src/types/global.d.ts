@@ -24,3 +24,10 @@ interface ParsedMovie extends Omit<Movie, "director" | "top_cast" | "genre"> {
 	top_cast: string[];
 	genre: string[];
 }
+
+type CSSModuleClasses = { readonly [key: string]: string };
+
+declare module "*.module.css" {
+	const classes: CSSModuleClasses;
+	export default classes;
+}

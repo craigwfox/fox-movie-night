@@ -1,23 +1,21 @@
 import React, { Suspense } from "react";
 import { createClient } from "@/src/utils/supabase/server";
-import MovieCard from "../components/feature/movie-card";
+import MovieCard from "../components/feature/movie-card/movie-card";
 
 export default function Home() {
 	return (
-		<div className="">
-			<main className="">
-				<Suspense
-					fallback={
-						<section>
-							<p>Loading movies…</p>
-						</section>
-					}
-				>
-					{/* MoviesList is an async Server Component that does the supabase/cookies work */}
-					<MoviesList />
-				</Suspense>
-			</main>
-		</div>
+		<main>
+			<Suspense
+				fallback={
+					<section>
+						<p>Loading movies…</p>
+					</section>
+				}
+			>
+				{/* MoviesList is an async Server Component that does the supabase/cookies work */}
+				<MoviesList />
+			</Suspense>
+		</main>
 	);
 }
 

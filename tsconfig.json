@@ -13,6 +13,8 @@
 		"isolatedModules": true,
 		"jsx": "react-jsx",
 		"incremental": true,
+		"typeRoots": ["./node_modules/@types", "./src/types"],
+		"types": ["node"],
 		"plugins": [
 			{
 				"name": "next"
@@ -23,6 +25,7 @@
 		}
 	},
 	"include": [
+		"src/types/**/*.d.ts",
 		"src/types/**/*.ts",
 		"next-env.d.ts",
 		"**/*.ts",
@@ -32,5 +35,8 @@
 		"**/*.mts",
 		"postcss.config.mjs"
 	],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules"],
+	"ts": {
+		"includeSourceContentInSourceMap": true
+	}
 }

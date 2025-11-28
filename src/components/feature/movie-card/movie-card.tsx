@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function MovieCard({ movie }: { movie: Movie }) {
 	return (
-		<article className="movie-card" aria-labelledby={movie.id} id="">
+		<article className="movie-card" aria-labelledby={movie.id}>
 			<div className="movie-card__image">
 				<Image
 					src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -17,9 +17,7 @@ export default function MovieCard({ movie }: { movie: Movie }) {
 			<div className="movie-card__content">
 				<div className="movie-card__inner">
 					<Link href={`/movie/${movie.slug}`}>
-						<h2 className="" id={movie.id}>
-							{movie.name}
-						</h2>
+						<h2 id={movie.id}>{movie.name}</h2>
 					</Link>
 					<ul>
 						<li>{movie.watch_date}</li>

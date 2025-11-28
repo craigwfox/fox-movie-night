@@ -3,24 +3,27 @@
 	Styles
 ======---------------------------------======
 ======---------------------------------=== */
+
+@layer reset, vendor, globals, composition, block, utilites, exceptions;
+
 /* ====---------------====
 	Resets/globals
 =======---------------= */
-@import "./tokens/default/build/css/tokens.css" layer(globals);
-/*@import "./tokens/light/build/css/tokens.css";*/
-@import "globals/reset.css" layer(globals);
-@import "globals/variables.css" layer(globals);
+@import "./tokens/default/build/css/tokens.css";
+@import "globals/reset.css";
+@import "globals/variables.css";
 
 /* ====---------------====
 	Composition
 =======---------------= */
-@import "composition/layout.css" layer(block);
+@import "composition/layout.css";
 
 /* ====---------------====
 	Blocks
 =======---------------= */
-@import "blocks/page-header.css" layer(block);
-@import "components/movie-card.css" layer(block);
+@import "blocks/page-header.css";
+@import "blocks/movie-single.css";
+@import "blocks/movie-card.css";
 
 /* ====---------------====
 	Utilities
