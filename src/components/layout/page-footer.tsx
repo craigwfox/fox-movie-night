@@ -5,5 +5,5 @@ export default function PageFooter() {
 				By <a href="https://craigwfox.com">Craig Fox</a>
 			</p>
 		</footer>
-	);
+	)
 }

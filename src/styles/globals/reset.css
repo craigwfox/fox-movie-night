@@ -120,18 +120,18 @@
 
 	input:not(
 		:where(
-			[type="submit"],
-			[type="checkbox"],
-			[type="radio"],
-			[type="button"],
-			[type="reset"]
+			[type='submit'],
+			[type='checkbox'],
+			[type='radio'],
+			[type='button'],
+			[type='reset']
 		)
 	) {
 		inline-size: 100%;
 	}
 
 	button,
-	input:where([type="submit"], [type="reset"], [type="button"]) {
+	input:where([type='submit'], [type='reset'], [type='button']) {
 		background: CanvasText;
 		color: Canvas;
 		border: 1px solid transparent;
@@ -155,7 +155,7 @@
 		fill: currentColor;
 	}
 
-	[aria-disabled="true" i],
+	[aria-disabled='true' i],
 	[disabled] {
 		cursor: not-allowed;
 	}
@@ -209,7 +209,7 @@
 		}
 	}
 
-	[role="region"][aria-labelledby][tabindex] {
+	[role='region'][aria-labelledby][tabindex] {
 		overflow: auto;
 	}
 

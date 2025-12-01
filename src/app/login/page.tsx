@@ -1,4 +1,4 @@
-import { login } from "./actions";
+import { login } from './actions'
 
 export default function LoginPage() {
 	return (
@@ -8,5 +8,5 @@ export default function LoginPage() {
 			<label htmlFor="password">Password:</label>
 			<button formAction={login}>Log in</button>
 		</form>
-	);
+	)
 }

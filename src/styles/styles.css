@@ -9,21 +9,21 @@
 /* ====---------------====
 	Resets/globals
 =======---------------= */
-@import "./tokens/default/build/css/tokens.css";
-@import "globals/reset.css";
-@import "globals/variables.css";
+@import './tokens/default/build/css/tokens.css';
+@import 'globals/reset.css';
+@import 'globals/variables.css';
 
 /* ====---------------====
 	Composition
 =======---------------= */
-@import "composition/layout.css";
+@import 'composition/layout.css';
 
 /* ====---------------====
 	Blocks
 =======---------------= */
-@import "blocks/page-header.css";
-@import "blocks/movie-single.css";
-@import "blocks/movie-card.css";
+@import 'blocks/page-header.css';
+@import 'blocks/movie-single.css';
+@import 'blocks/movie-card.css';
 
 /* ====---------------====
 	Utilities

@@ -1,6 +1,6 @@
 @layer globals {
 	:root {
-		--font-sans: "Figtree", sans-serif;
+		--font-sans: 'Figtree', sans-serif;
 
 		--content-gap: clamp(1.5rem, 1.273rem + 0.97vw, 2rem);
 

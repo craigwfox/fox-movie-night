@@ -1,21 +1,21 @@
-import Image from "next/image";
-import { Suspense } from "react";
-import { createClient } from "@/src/utils/supabase/server";
-import { MMMDYYYY } from "@/src/utils/formatting/dates";
+import Image from 'next/image'
+import { Suspense } from 'react'
+import { createClient } from '@/src/utils/supabase/server'
+import { MMMDYYYY } from '@/src/utils/formatting/dates'
 
 function stringCommaList(str: string): string {
-	const strArry = JSON.parse(str);
-	return strArry.length > 1 ? strArry.join(", ") : strArry.join("");
+	const strArry = JSON.parse(str)
+	return strArry.length > 1 ? strArry.join(', ') : strArry.join('')
 }
 
 function stringToArry(str: string): string[] {
-	return JSON.parse(str);
+	return JSON.parse(str)
 }
 
 export default async function MovieSingle({
 	params,
 }: {
-	params: Promise<{ slug: string }>;
+	params: Promise<{ slug: string }>
 }) {
 	return (
 		<div className="movie-single">
@@ -29,18 +29,18 @@ export default async function MovieSingle({
 				<MovieItem params={params} />
 			</Suspense>
 		</div>
-	);
+	)
 }
 
 async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
-	const { slug } = await params;
-	const supabase = await createClient();
+	const { slug } = await params
+	const supabase = await createClient()
 	const { data: movies, error } = await supabase
-		.from("movies")
+		.from('movies')
 		.select()
-		.eq("slug", slug)
-		.limit(1);
-	const movie: Movie = movies?.[0];
+		.eq('slug', slug)
+		.limit(1)
+	const movie: Movie = movies?.[0]
 
 	return movie ? (
 		<div>
@@ -52,12 +52,12 @@ async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
 					<li>
 						<strong>Watched:</strong> {MMMDYYYY(movie.watch_date)}
 					</li>
-					{movie.picked && movie.picked != "none" ? (
+					{movie.picked && movie.picked != 'none' ? (
 						<li>
 							<strong>Picked:</strong> {movie.picked}
 						</li>
 					) : (
-						""
+						''
 					)}
 				</ul>
 				{movie.rating_craig && !movie.rating_rebecca ? (
@@ -130,5 +130,5 @@ async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
 		</div>
 	) : (
 		<p>This movie does not exist</p>
-	);
+	)
 }

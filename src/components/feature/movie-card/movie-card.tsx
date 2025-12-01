@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function MovieCard({ movie }: { movie: Movie }) {
 	return (
@@ -21,12 +21,12 @@ export default function MovieCard({ movie }: { movie: Movie }) {
 					</Link>
 					<ul>
 						<li>{movie.watch_date}</li>
-						{movie.picked && movie.picked != "none" ? (
+						{movie.picked && movie.picked != 'none' ? (
 							<li>
 								<strong>Picked:</strong> {movie.picked}
 							</li>
 						) : (
-							""
+							''
 						)}
 					</ul>
 					{movie.rating_craig && !movie.rating_rebecca ? (
@@ -53,5 +53,5 @@ export default function MovieCard({ movie }: { movie: Movie }) {
 				</div>
 			</div>
 		</article>
-	);
+	)
 }

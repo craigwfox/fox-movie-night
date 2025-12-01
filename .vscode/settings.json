@@ -1,5 +1,5 @@
 {
-  "css.customData": ["./.vscode/tokens.custom-data.json"],
-  "scss.customData": ["./.vscode/tokens.custom-data.json"],
-  "less.customData": ["./.vscode/tokens.custom-data.json"]
+	"css.customData": ["./.vscode/tokens.custom-data.json"],
+	"scss.customData": ["./.vscode/tokens.custom-data.json"],
+	"less.customData": ["./.vscode/tokens.custom-data.json"]
 }

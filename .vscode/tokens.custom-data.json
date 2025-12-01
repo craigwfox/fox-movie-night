@@ -1,1667 +1,1667 @@
 {
-  "version": 1.1,
-  "properties": [
-    {
-      "name": "--ds-blur-4",
-      "description": "Token from tokens.json",
-      "default": "0.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-blur-8",
-      "description": "Token from tokens.json",
-      "default": "0.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-blur-16",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-blur-20",
-      "description": "Token from tokens.json",
-      "default": "1.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-radius-0",
-      "description": "Token from tokens.json",
-      "default": "0rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-radius-2",
-      "description": "Token from tokens.json",
-      "default": "0.125rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-radius-3",
-      "description": "Token from tokens.json",
-      "default": "0.1875rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-radius-4",
-      "description": "Token from tokens.json",
-      "default": "0.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-radius-8",
-      "description": "Token from tokens.json",
-      "default": "0.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-radius-16",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-radius-24",
-      "description": "Token from tokens.json",
-      "default": "1.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-radius-32",
-      "description": "Token from tokens.json",
-      "default": "2rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-radius-999",
-      "description": "Token from tokens.json",
-      "default": "62.4375rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-radius-none",
-      "description": "Token from tokens.json",
-      "default": "0rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-radius-sm",
-      "description": "Token from tokens.json",
-      "default": "0.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-radius-md",
-      "description": "Token from tokens.json",
-      "default": "0.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-radius-lg",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-radius-xlg",
-      "description": "Token from tokens.json",
-      "default": "1.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-radius-xxlg",
-      "description": "Token from tokens.json",
-      "default": "2rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-radius-round",
-      "description": "Token from tokens.json",
-      "default": "62.4375rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-width-1",
-      "description": "Token from tokens.json",
-      "default": "0.0625rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-width-2",
-      "description": "Token from tokens.json",
-      "default": "0.125rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-width-4",
-      "description": "Token from tokens.json",
-      "default": "0.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-border-width-8",
-      "description": "Token from tokens.json",
-      "default": "0.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-width-sm",
-      "description": "Token from tokens.json",
-      "default": "0.0625rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-width-md",
-      "description": "Token from tokens.json",
-      "default": "0.125rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-width-lg",
-      "description": "Token from tokens.json",
-      "default": "0.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-border-width-xl",
-      "description": "Token from tokens.json",
-      "default": "0.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-small-viewport",
-      "description": "Token from tokens.json",
-      "default": "small",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-small-default_width",
-      "description": "Token from tokens.json",
-      "default": "23.4375rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-small-min_width",
-      "description": "Token from tokens.json",
-      "default": "20rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-small-max_width",
-      "description": "Token from tokens.json",
-      "default": "35rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-small-horizontal_margin",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-small-gutter",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-medium-viewport",
-      "description": "Token from tokens.json",
-      "default": "medium",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-medium-default_width",
-      "description": "Token from tokens.json",
-      "default": "48rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-medium-min_width",
-      "description": "Token from tokens.json",
-      "default": "35rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-medium-max_width",
-      "description": "Token from tokens.json",
-      "default": "60rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-medium-horizontal_margin",
-      "description": "Token from tokens.json",
-      "default": "3rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-medium-gutter",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-large-viewport",
-      "description": "Token from tokens.json",
-      "default": "large",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-large-default_width",
-      "description": "Token from tokens.json",
-      "default": "75rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-large-min_width",
-      "description": "Token from tokens.json",
-      "default": "60rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-large-max_width",
-      "description": "Token from tokens.json",
-      "default": "125rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-large-horizontal_margin",
-      "description": "Token from tokens.json",
-      "default": "5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-breakpoints-large-gutter",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-blue-100",
-      "description": "Token from tokens.json",
-      "default": "#e6f2f7",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-blue-200",
-      "description": "Token from tokens.json",
-      "default": "#cce4f0",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-blue-300",
-      "description": "Token from tokens.json",
-      "default": "#99c9e1",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-blue-400",
-      "description": "Token from tokens.json",
-      "default": "#3494c2",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-blue-500",
-      "description": "Token from tokens.json",
-      "default": "#0179b3",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-blue-600",
-      "description": "Token from tokens.json",
-      "default": "#01618f",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-blue-700",
-      "description": "Token from tokens.json",
-      "default": "#01496b",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-blue-800",
-      "description": "Token from tokens.json",
-      "default": "#003048",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-blue-900",
-      "description": "Token from tokens.json",
-      "default": "#001824",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-primary",
-      "description": "Token from tokens.json",
-      "default": "#ffd333",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-red-100",
-      "description": "Token from tokens.json",
-      "default": "#f9eaec",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-red-200",
-      "description": "Token from tokens.json",
-      "default": "#f3d5d8",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-red-300",
-      "description": "Token from tokens.json",
-      "default": "#e7abb1",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-red-400",
-      "description": "Token from tokens.json",
-      "default": "#da828a",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-red-500",
-      "description": "Token from tokens.json",
-      "default": "#ce5863",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-red-600",
-      "description": "Token from tokens.json",
-      "default": "#c22e3c",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-red-700",
-      "description": "Token from tokens.json",
-      "default": "#9b2530",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-red-800",
-      "description": "Token from tokens.json",
-      "default": "#4e1218",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-red-900",
-      "description": "Token from tokens.json",
-      "default": "#27090c",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-yellow-100",
-      "description": "Token from tokens.json",
-      "default": "#fffbeb",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-yellow-200",
-      "description": "Token from tokens.json",
-      "default": "#fff6d6",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-yellow-300",
-      "description": "Token from tokens.json",
-      "default": "#ffedad",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-yellow-400",
-      "description": "Token from tokens.json",
-      "default": "#ffe585",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-yellow-500",
-      "description": "Token from tokens.json",
-      "default": "#ffdc5c",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-yellow-600",
-      "description": "Token from tokens.json",
-      "default": "#ffd333",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-yellow-700",
-      "description": "Token from tokens.json",
-      "default": "#cca929",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-yellow-800",
-      "description": "Token from tokens.json",
-      "default": "#997f1f",
-      "values": []
-    },
-    {
-      "name": "--ds-color-brand-yellow-900",
-      "description": "Token from tokens.json",
-      "default": "#665414",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-cool_gray-100",
-      "description": "Token from tokens.json",
-      "default": "#fcfcfd",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-cool_gray-200",
-      "description": "Token from tokens.json",
-      "default": "#dcdfea",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-cool_gray-300",
-      "description": "Token from tokens.json",
-      "default": "#b9c0d4",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-cool_gray-400",
-      "description": "Token from tokens.json",
-      "default": "#7d89b0",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-cool_gray-500",
-      "description": "Token from tokens.json",
-      "default": "#5d6b98",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-cool_gray-600",
-      "description": "Token from tokens.json",
-      "default": "#4a5578",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-cool_gray-700",
-      "description": "Token from tokens.json",
-      "default": "#404968",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-cool_gray-800",
-      "description": "Token from tokens.json",
-      "default": "#30374f",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-cool_gray-900",
-      "description": "Token from tokens.json",
-      "default": "#111322",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-true_gray-100",
-      "description": "Token from tokens.json",
-      "default": "#f5f5f5",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-true_gray-200",
-      "description": "Token from tokens.json",
-      "default": "#e5e5e5",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-true_gray-300",
-      "description": "Token from tokens.json",
-      "default": "#d6d6d6",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-true_gray-400",
-      "description": "Token from tokens.json",
-      "default": "#a3a3a3",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-true_gray-500",
-      "description": "Token from tokens.json",
-      "default": "#737373",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-true_gray-600",
-      "description": "Token from tokens.json",
-      "default": "#525252",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-true_gray-700",
-      "description": "Token from tokens.json",
-      "default": "#424242",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-true_gray-800",
-      "description": "Token from tokens.json",
-      "default": "#292929",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-true_gray-900",
-      "description": "Token from tokens.json",
-      "default": "#141414",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-white",
-      "description": "Token from tokens.json",
-      "default": "#ffffff",
-      "values": []
-    },
-    {
-      "name": "--ds-color-neutrals-black",
-      "description": "Token from tokens.json",
-      "default": "#000000",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-information-100",
-      "description": "Token from tokens.json",
-      "default": "#eceefc",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-information-200",
-      "description": "Token from tokens.json",
-      "default": "#ccd1f6",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-information-300",
-      "description": "Token from tokens.json",
-      "default": "#abb3f0",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-information-400",
-      "description": "Token from tokens.json",
-      "default": "#8792ea",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-information-500",
-      "description": "Token from tokens.json",
-      "default": "#6775e4",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-information-600",
-      "description": "Token from tokens.json",
-      "default": "#4555d3",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-information-700",
-      "description": "Token from tokens.json",
-      "default": "#34409e",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-information-800",
-      "description": "Token from tokens.json",
-      "default": "#242c6e",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-information-900",
-      "description": "Token from tokens.json",
-      "default": "#15193f",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-success-100",
-      "description": "Token from tokens.json",
-      "default": "#dcfae6",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-success-200",
-      "description": "Token from tokens.json",
-      "default": "#abefc6",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-success-300",
-      "description": "Token from tokens.json",
-      "default": "#75e0a7",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-success-400",
-      "description": "Token from tokens.json",
-      "default": "#47cd89",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-success-500",
-      "description": "Token from tokens.json",
-      "default": "#17b26a",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-success-600",
-      "description": "Token from tokens.json",
-      "default": "#079455",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-success-700",
-      "description": "Token from tokens.json",
-      "default": "#067647",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-success-800",
-      "description": "Token from tokens.json",
-      "default": "#085d3a",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-success-900",
-      "description": "Token from tokens.json",
-      "default": "#074d31",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-warning-100",
-      "description": "Token from tokens.json",
-      "default": "#fef0c7",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-warning-200",
-      "description": "Token from tokens.json",
-      "default": "#fedf89",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-warning-300",
-      "description": "Token from tokens.json",
-      "default": "#fec84b",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-warning-400",
-      "description": "Token from tokens.json",
-      "default": "#fdb022",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-warning-500",
-      "description": "Token from tokens.json",
-      "default": "#f79009",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-warning-600",
-      "description": "Token from tokens.json",
-      "default": "#dc6803",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-warning-700",
-      "description": "Token from tokens.json",
-      "default": "#b54708",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-warning-800",
-      "description": "Token from tokens.json",
-      "default": "#93370d",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-warning-900",
-      "description": "Token from tokens.json",
-      "default": "#7a2e0e",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-danger-100",
-      "description": "Token from tokens.json",
-      "default": "#fee4e2",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-danger-200",
-      "description": "Token from tokens.json",
-      "default": "#fecdca",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-danger-300",
-      "description": "Token from tokens.json",
-      "default": "#fda29b",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-danger-400",
-      "description": "Token from tokens.json",
-      "default": "#f97066",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-danger-500",
-      "description": "Token from tokens.json",
-      "default": "#f04438",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-danger-600",
-      "description": "Token from tokens.json",
-      "default": "#d92d20",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-danger-700",
-      "description": "Token from tokens.json",
-      "default": "#b42318",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-danger-800",
-      "description": "Token from tokens.json",
-      "default": "#912018",
-      "values": []
-    },
-    {
-      "name": "--ds-color-utility-danger-900",
-      "description": "Token from tokens.json",
-      "default": "#7a271a",
-      "values": []
-    },
-    {
-      "name": "--ds-color-transparent-black-0",
-      "description": "Token from tokens.json",
-      "default": "#00000000",
-      "values": []
-    },
-    {
-      "name": "--ds-color-transparent-black-10",
-      "description": "Token from tokens.json",
-      "default": "#0000001a",
-      "values": []
-    },
-    {
-      "name": "--ds-color-transparent-black-25",
-      "description": "Token from tokens.json",
-      "default": "#00000040",
-      "values": []
-    },
-    {
-      "name": "--ds-color-transparent-black-90",
-      "description": "Token from tokens.json",
-      "default": "#000000e5",
-      "values": []
-    },
-    {
-      "name": "--ds-color-transparent-white-10",
-      "description": "Token from tokens.json",
-      "default": "#ffffff1a",
-      "values": []
-    },
-    {
-      "name": "--ds-color-transparent-white-25",
-      "description": "Token from tokens.json",
-      "default": "#ffffff40",
-      "values": []
-    },
-    {
-      "name": "--ds-color-transparent-white-50",
-      "description": "Token from tokens.json",
-      "default": "#ffffff80",
-      "values": []
-    },
-    {
-      "name": "--ds-color-transparent-white-75",
-      "description": "Token from tokens.json",
-      "default": "#ffffffbf",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-background-default",
-      "description": "Token from tokens.json",
-      "default": "#ffffff",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-background-reverse",
-      "description": "Token from tokens.json",
-      "default": "#001824",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-background-brand",
-      "description": "Token from tokens.json",
-      "default": "#ffd333",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-background-utility-danger",
-      "description": "Token from tokens.json",
-      "default": "#fee4e2",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-background-brand-subtle",
-      "description": "Token from tokens.json",
-      "default": "#e6f2f7",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-border-default",
-      "description": "Token from tokens.json",
-      "default": "#a3a3a3",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-border-subtle",
-      "description": "Token from tokens.json",
-      "default": "#d6d6d6",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-border-brand",
-      "description": "Token from tokens.json",
-      "default": "#0179b3",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-border-brand-alt",
-      "description": "Token from tokens.json",
-      "default": "#ffd333",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-border-brand-subtle",
-      "description": "Token from tokens.json",
-      "default": "#003048",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-border-brand-alt-subtle",
-      "description": "Token from tokens.json",
-      "default": "#ffedad",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-border-utility-danger",
-      "description": "Token from tokens.json",
-      "default": "#b42318",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-border-utility-info",
-      "description": "Token from tokens.json",
-      "default": "#4555d3",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-border-utility-info-bubble",
-      "description": "Token from tokens.json",
-      "default": "#0179b3",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-content-default",
-      "description": "Token from tokens.json",
-      "default": "#292929",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-content-medium",
-      "description": "Token from tokens.json",
-      "default": "#01618f",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-content-subtle",
-      "description": "Token from tokens.json",
-      "default": "#737373",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-content-reverse",
-      "description": "Token from tokens.json",
-      "default": "#ffffff",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-content-reverse-alt",
-      "description": "Token from tokens.json",
-      "default": "#cce4f0",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-content-brand",
-      "description": "Token from tokens.json",
-      "default": "#ffd333",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-content-utility-danger",
-      "description": "Token from tokens.json",
-      "default": "#b42318",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-content-utility-info",
-      "description": "Token from tokens.json",
-      "default": "#4555d3",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-color-content-utility-info-bubble",
-      "description": "Token from tokens.json",
-      "default": "#0179b3",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-10",
-      "description": "Token from tokens.json",
-      "default": "10",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-20",
-      "description": "Token from tokens.json",
-      "default": "20",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-30",
-      "description": "Token from tokens.json",
-      "default": "30",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-40",
-      "description": "Token from tokens.json",
-      "default": "40",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-50",
-      "description": "Token from tokens.json",
-      "default": "50",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-60",
-      "description": "Token from tokens.json",
-      "default": "60",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-70",
-      "description": "Token from tokens.json",
-      "default": "70",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-80",
-      "description": "Token from tokens.json",
-      "default": "80",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-90",
-      "description": "Token from tokens.json",
-      "default": "90",
-      "values": []
-    },
-    {
-      "name": "--ds-opacity-100",
-      "description": "Token from tokens.json",
-      "default": "100",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-md-x",
-      "description": "Token from tokens.json",
-      "default": "0rem",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-md-y",
-      "description": "Token from tokens.json",
-      "default": "0.375rem",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-md-blur",
-      "description": "Token from tokens.json",
-      "default": "0.375rem",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-md-spread",
-      "description": "Token from tokens.json",
-      "default": "0rem",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-md-color",
-      "description": "Token from tokens.json",
-      "default": "#00000040",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-sm-x",
-      "description": "Token from tokens.json",
-      "default": "0rem",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-sm-y",
-      "description": "Token from tokens.json",
-      "default": "0.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-sm-blur",
-      "description": "Token from tokens.json",
-      "default": "0.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-sm-spread",
-      "description": "Token from tokens.json",
-      "default": "0rem",
-      "values": []
-    },
-    {
-      "name": "--ds-shadow-sm-color",
-      "description": "Token from tokens.json",
-      "default": "#00000040",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-0",
-      "description": "Token from tokens.json",
-      "default": "0rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-2",
-      "description": "Token from tokens.json",
-      "default": "0.125rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-4",
-      "description": "Token from tokens.json",
-      "default": "0.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-8",
-      "description": "Token from tokens.json",
-      "default": "0.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-12",
-      "description": "Token from tokens.json",
-      "default": "0.75rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-16",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-20",
-      "description": "Token from tokens.json",
-      "default": "1.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-24",
-      "description": "Token from tokens.json",
-      "default": "1.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-32",
-      "description": "Token from tokens.json",
-      "default": "2rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-40",
-      "description": "Token from tokens.json",
-      "default": "2.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-48",
-      "description": "Token from tokens.json",
-      "default": "3rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-64",
-      "description": "Token from tokens.json",
-      "default": "4rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-80",
-      "description": "Token from tokens.json",
-      "default": "5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-96",
-      "description": "Token from tokens.json",
-      "default": "6rem",
-      "values": []
-    },
-    {
-      "name": "--ds-spacing-128",
-      "description": "Token from tokens.json",
-      "default": "8rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-family-figtree",
-      "description": "Token from tokens.json",
-      "default": "Figtree",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-weight-100",
-      "description": "Token from tokens.json",
-      "default": "100",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-weight-200",
-      "description": "Token from tokens.json",
-      "default": "200",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-weight-300",
-      "description": "Token from tokens.json",
-      "default": "300",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-weight-400",
-      "description": "Token from tokens.json",
-      "default": "400",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-weight-500",
-      "description": "Token from tokens.json",
-      "default": "500",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-weight-600",
-      "description": "Token from tokens.json",
-      "default": "600",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-weight-700",
-      "description": "Token from tokens.json",
-      "default": "700",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-weight-800",
-      "description": "Token from tokens.json",
-      "default": "800",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-weight-900",
-      "description": "Token from tokens.json",
-      "default": "900",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-12",
-      "description": "Token from tokens.json",
-      "default": "0.75rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-14",
-      "description": "Token from tokens.json",
-      "default": "0.875rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-16",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-18",
-      "description": "Token from tokens.json",
-      "default": "1.125rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-20",
-      "description": "Token from tokens.json",
-      "default": "1.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-24",
-      "description": "Token from tokens.json",
-      "default": "1.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-28",
-      "description": "Token from tokens.json",
-      "default": "1.75rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-32",
-      "description": "Token from tokens.json",
-      "default": "2rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-40",
-      "description": "Token from tokens.json",
-      "default": "2.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-48",
-      "description": "Token from tokens.json",
-      "default": "3rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-56",
-      "description": "Token from tokens.json",
-      "default": "3.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-64",
-      "description": "Token from tokens.json",
-      "default": "4rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-font-size-100",
-      "description": "Token from tokens.json",
-      "default": "6.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-16",
-      "description": "Token from tokens.json",
-      "default": "1rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-20",
-      "description": "Token from tokens.json",
-      "default": "1.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-24",
-      "description": "Token from tokens.json",
-      "default": "1.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-28",
-      "description": "Token from tokens.json",
-      "default": "1.75rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-32",
-      "description": "Token from tokens.json",
-      "default": "2rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-36",
-      "description": "Token from tokens.json",
-      "default": "2.25rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-40",
-      "description": "Token from tokens.json",
-      "default": "2.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-48",
-      "description": "Token from tokens.json",
-      "default": "3rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-56",
-      "description": "Token from tokens.json",
-      "default": "3.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-64",
-      "description": "Token from tokens.json",
-      "default": "4rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-72",
-      "description": "Token from tokens.json",
-      "default": "4.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-line-height-110",
-      "description": "Token from tokens.json",
-      "default": "6.875rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-letter-spacing-0",
-      "description": "Token from tokens.json",
-      "default": "0rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-letter-spacing-2",
-      "description": "Token from tokens.json",
-      "default": "0.125rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-letter-spacing-minus-2",
-      "description": "Token from tokens.json",
-      "default": "-0.125rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-letter-spacing-minus-1-half",
-      "description": "Token from tokens.json",
-      "default": "-0.0938rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-letter-spacing-minus-1",
-      "description": "Token from tokens.json",
-      "default": "-0.0625rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-letter-spacing-minus-half",
-      "description": "Token from tokens.json",
-      "default": "-0.0313rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-letter-spacing-half",
-      "description": "Token from tokens.json",
-      "default": "0.0313rem",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-text-transform-none",
-      "description": "Token from tokens.json",
-      "default": "none",
-      "values": []
-    },
-    {
-      "name": "--ds-typography-text-transform-uppercase",
-      "description": "Token from tokens.json",
-      "default": "uppercase",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-font-family",
-      "description": "Token from tokens.json",
-      "default": "Figtree",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-font-weight",
-      "description": "Token from tokens.json",
-      "default": "800",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-font-size",
-      "description": "Token from tokens.json",
-      "default": "5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-line-height",
-      "description": "Token from tokens.json",
-      "default": "6.875rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-letter-spacing",
-      "description": "Token from tokens.json",
-      "default": "-0.125rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-text-transform",
-      "description": "Token from tokens.json",
-      "default": "none",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-mobile-font-family",
-      "description": "Token from tokens.json",
-      "default": "Figtree",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-mobile-font-weight",
-      "description": "Token from tokens.json",
-      "default": "800",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-mobile-font-size",
-      "description": "Token from tokens.json",
-      "default": "2.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-mobile-line-height",
-      "description": "Token from tokens.json",
-      "default": "3rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-mobile-letter-spacing",
-      "description": "Token from tokens.json",
-      "default": "-0.0938rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-default-mobile-text-transform",
-      "description": "Token from tokens.json",
-      "default": "none",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-font-family",
-      "description": "Token from tokens.json",
-      "default": "Figtree",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-font-weight",
-      "description": "Token from tokens.json",
-      "default": "700",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-font-size",
-      "description": "Token from tokens.json",
-      "default": "4rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-line-height",
-      "description": "Token from tokens.json",
-      "default": "5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-letter-spacing",
-      "description": "Token from tokens.json",
-      "default": "-0.0938rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-text-transform",
-      "description": "Token from tokens.json",
-      "default": "none",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-mobile-font-family",
-      "description": "Token from tokens.json",
-      "default": "Figtree",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-mobile-font-weight",
-      "description": "Token from tokens.json",
-      "default": "600",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-mobile-font-size",
-      "description": "Token from tokens.json",
-      "default": "2rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-mobile-line-height",
-      "description": "Token from tokens.json",
-      "default": "2.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-mobile-letter-spacing",
-      "description": "Token from tokens.json",
-      "default": "-0.0625rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-display-sm-mobile-text-transform",
-      "description": "Token from tokens.json",
-      "default": "none",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-font-family",
-      "description": "Token from tokens.json",
-      "default": "Figtree",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-font-weight",
-      "description": "Token from tokens.json",
-      "default": "800",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-font-size",
-      "description": "Token from tokens.json",
-      "default": "3rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-line-height",
-      "description": "Token from tokens.json",
-      "default": "3.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-letter-spacing",
-      "description": "Token from tokens.json",
-      "default": "0.0313rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-text-transform",
-      "description": "Token from tokens.json",
-      "default": "none",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-mobile-font-family",
-      "description": "Token from tokens.json",
-      "default": "Figtree",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-mobile-font-weight",
-      "description": "Token from tokens.json",
-      "default": "800",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-mobile-font-size",
-      "description": "Token from tokens.json",
-      "default": "2.5rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-mobile-line-height",
-      "description": "Token from tokens.json",
-      "default": "3rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-mobile-letter-spacing",
-      "description": "Token from tokens.json",
-      "default": "0.0313rem",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-lg-mobile-text-transform",
-      "description": "Token from tokens.json",
-      "default": "none",
-      "values": []
-    },
-    {
-      "name": "--ds-theme-typography-headline-default-font-family",
-      "description": "Token from tokens.json",
-      "default": "Figtree",
-      "values": []
-    }
-  ]
+	"version": 1.1,
+	"properties": [
+		{
+			"name": "--ds-blur-4",
+			"description": "Token from tokens.json",
+			"default": "0.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-blur-8",
+			"description": "Token from tokens.json",
+			"default": "0.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-blur-16",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-blur-20",
+			"description": "Token from tokens.json",
+			"default": "1.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-radius-0",
+			"description": "Token from tokens.json",
+			"default": "0rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-radius-2",
+			"description": "Token from tokens.json",
+			"default": "0.125rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-radius-3",
+			"description": "Token from tokens.json",
+			"default": "0.1875rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-radius-4",
+			"description": "Token from tokens.json",
+			"default": "0.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-radius-8",
+			"description": "Token from tokens.json",
+			"default": "0.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-radius-16",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-radius-24",
+			"description": "Token from tokens.json",
+			"default": "1.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-radius-32",
+			"description": "Token from tokens.json",
+			"default": "2rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-radius-999",
+			"description": "Token from tokens.json",
+			"default": "62.4375rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-radius-none",
+			"description": "Token from tokens.json",
+			"default": "0rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-radius-sm",
+			"description": "Token from tokens.json",
+			"default": "0.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-radius-md",
+			"description": "Token from tokens.json",
+			"default": "0.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-radius-lg",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-radius-xlg",
+			"description": "Token from tokens.json",
+			"default": "1.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-radius-xxlg",
+			"description": "Token from tokens.json",
+			"default": "2rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-radius-round",
+			"description": "Token from tokens.json",
+			"default": "62.4375rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-width-1",
+			"description": "Token from tokens.json",
+			"default": "0.0625rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-width-2",
+			"description": "Token from tokens.json",
+			"default": "0.125rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-width-4",
+			"description": "Token from tokens.json",
+			"default": "0.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-border-width-8",
+			"description": "Token from tokens.json",
+			"default": "0.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-width-sm",
+			"description": "Token from tokens.json",
+			"default": "0.0625rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-width-md",
+			"description": "Token from tokens.json",
+			"default": "0.125rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-width-lg",
+			"description": "Token from tokens.json",
+			"default": "0.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-border-width-xl",
+			"description": "Token from tokens.json",
+			"default": "0.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-small-viewport",
+			"description": "Token from tokens.json",
+			"default": "small",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-small-default_width",
+			"description": "Token from tokens.json",
+			"default": "23.4375rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-small-min_width",
+			"description": "Token from tokens.json",
+			"default": "20rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-small-max_width",
+			"description": "Token from tokens.json",
+			"default": "35rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-small-horizontal_margin",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-small-gutter",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-medium-viewport",
+			"description": "Token from tokens.json",
+			"default": "medium",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-medium-default_width",
+			"description": "Token from tokens.json",
+			"default": "48rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-medium-min_width",
+			"description": "Token from tokens.json",
+			"default": "35rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-medium-max_width",
+			"description": "Token from tokens.json",
+			"default": "60rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-medium-horizontal_margin",
+			"description": "Token from tokens.json",
+			"default": "3rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-medium-gutter",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-large-viewport",
+			"description": "Token from tokens.json",
+			"default": "large",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-large-default_width",
+			"description": "Token from tokens.json",
+			"default": "75rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-large-min_width",
+			"description": "Token from tokens.json",
+			"default": "60rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-large-max_width",
+			"description": "Token from tokens.json",
+			"default": "125rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-large-horizontal_margin",
+			"description": "Token from tokens.json",
+			"default": "5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-breakpoints-large-gutter",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-blue-100",
+			"description": "Token from tokens.json",
+			"default": "#e6f2f7",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-blue-200",
+			"description": "Token from tokens.json",
+			"default": "#cce4f0",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-blue-300",
+			"description": "Token from tokens.json",
+			"default": "#99c9e1",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-blue-400",
+			"description": "Token from tokens.json",
+			"default": "#3494c2",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-blue-500",
+			"description": "Token from tokens.json",
+			"default": "#0179b3",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-blue-600",
+			"description": "Token from tokens.json",
+			"default": "#01618f",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-blue-700",
+			"description": "Token from tokens.json",
+			"default": "#01496b",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-blue-800",
+			"description": "Token from tokens.json",
+			"default": "#003048",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-blue-900",
+			"description": "Token from tokens.json",
+			"default": "#001824",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-primary",
+			"description": "Token from tokens.json",
+			"default": "#ffd333",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-red-100",
+			"description": "Token from tokens.json",
+			"default": "#f9eaec",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-red-200",
+			"description": "Token from tokens.json",
+			"default": "#f3d5d8",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-red-300",
+			"description": "Token from tokens.json",
+			"default": "#e7abb1",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-red-400",
+			"description": "Token from tokens.json",
+			"default": "#da828a",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-red-500",
+			"description": "Token from tokens.json",
+			"default": "#ce5863",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-red-600",
+			"description": "Token from tokens.json",
+			"default": "#c22e3c",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-red-700",
+			"description": "Token from tokens.json",
+			"default": "#9b2530",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-red-800",
+			"description": "Token from tokens.json",
+			"default": "#4e1218",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-red-900",
+			"description": "Token from tokens.json",
+			"default": "#27090c",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-yellow-100",
+			"description": "Token from tokens.json",
+			"default": "#fffbeb",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-yellow-200",
+			"description": "Token from tokens.json",
+			"default": "#fff6d6",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-yellow-300",
+			"description": "Token from tokens.json",
+			"default": "#ffedad",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-yellow-400",
+			"description": "Token from tokens.json",
+			"default": "#ffe585",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-yellow-500",
+			"description": "Token from tokens.json",
+			"default": "#ffdc5c",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-yellow-600",
+			"description": "Token from tokens.json",
+			"default": "#ffd333",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-yellow-700",
+			"description": "Token from tokens.json",
+			"default": "#cca929",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-yellow-800",
+			"description": "Token from tokens.json",
+			"default": "#997f1f",
+			"values": []
+		},
+		{
+			"name": "--ds-color-brand-yellow-900",
+			"description": "Token from tokens.json",
+			"default": "#665414",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-cool_gray-100",
+			"description": "Token from tokens.json",
+			"default": "#fcfcfd",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-cool_gray-200",
+			"description": "Token from tokens.json",
+			"default": "#dcdfea",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-cool_gray-300",
+			"description": "Token from tokens.json",
+			"default": "#b9c0d4",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-cool_gray-400",
+			"description": "Token from tokens.json",
+			"default": "#7d89b0",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-cool_gray-500",
+			"description": "Token from tokens.json",
+			"default": "#5d6b98",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-cool_gray-600",
+			"description": "Token from tokens.json",
+			"default": "#4a5578",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-cool_gray-700",
+			"description": "Token from tokens.json",
+			"default": "#404968",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-cool_gray-800",
+			"description": "Token from tokens.json",
+			"default": "#30374f",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-cool_gray-900",
+			"description": "Token from tokens.json",
+			"default": "#111322",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-true_gray-100",
+			"description": "Token from tokens.json",
+			"default": "#f5f5f5",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-true_gray-200",
+			"description": "Token from tokens.json",
+			"default": "#e5e5e5",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-true_gray-300",
+			"description": "Token from tokens.json",
+			"default": "#d6d6d6",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-true_gray-400",
+			"description": "Token from tokens.json",
+			"default": "#a3a3a3",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-true_gray-500",
+			"description": "Token from tokens.json",
+			"default": "#737373",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-true_gray-600",
+			"description": "Token from tokens.json",
+			"default": "#525252",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-true_gray-700",
+			"description": "Token from tokens.json",
+			"default": "#424242",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-true_gray-800",
+			"description": "Token from tokens.json",
+			"default": "#292929",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-true_gray-900",
+			"description": "Token from tokens.json",
+			"default": "#141414",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-white",
+			"description": "Token from tokens.json",
+			"default": "#ffffff",
+			"values": []
+		},
+		{
+			"name": "--ds-color-neutrals-black",
+			"description": "Token from tokens.json",
+			"default": "#000000",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-information-100",
+			"description": "Token from tokens.json",
+			"default": "#eceefc",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-information-200",
+			"description": "Token from tokens.json",
+			"default": "#ccd1f6",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-information-300",
+			"description": "Token from tokens.json",
+			"default": "#abb3f0",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-information-400",
+			"description": "Token from tokens.json",
+			"default": "#8792ea",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-information-500",
+			"description": "Token from tokens.json",
+			"default": "#6775e4",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-information-600",
+			"description": "Token from tokens.json",
+			"default": "#4555d3",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-information-700",
+			"description": "Token from tokens.json",
+			"default": "#34409e",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-information-800",
+			"description": "Token from tokens.json",
+			"default": "#242c6e",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-information-900",
+			"description": "Token from tokens.json",
+			"default": "#15193f",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-success-100",
+			"description": "Token from tokens.json",
+			"default": "#dcfae6",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-success-200",
+			"description": "Token from tokens.json",
+			"default": "#abefc6",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-success-300",
+			"description": "Token from tokens.json",
+			"default": "#75e0a7",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-success-400",
+			"description": "Token from tokens.json",
+			"default": "#47cd89",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-success-500",
+			"description": "Token from tokens.json",
+			"default": "#17b26a",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-success-600",
+			"description": "Token from tokens.json",
+			"default": "#079455",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-success-700",
+			"description": "Token from tokens.json",
+			"default": "#067647",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-success-800",
+			"description": "Token from tokens.json",
+			"default": "#085d3a",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-success-900",
+			"description": "Token from tokens.json",
+			"default": "#074d31",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-warning-100",
+			"description": "Token from tokens.json",
+			"default": "#fef0c7",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-warning-200",
+			"description": "Token from tokens.json",
+			"default": "#fedf89",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-warning-300",
+			"description": "Token from tokens.json",
+			"default": "#fec84b",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-warning-400",
+			"description": "Token from tokens.json",
+			"default": "#fdb022",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-warning-500",
+			"description": "Token from tokens.json",
+			"default": "#f79009",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-warning-600",
+			"description": "Token from tokens.json",
+			"default": "#dc6803",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-warning-700",
+			"description": "Token from tokens.json",
+			"default": "#b54708",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-warning-800",
+			"description": "Token from tokens.json",
+			"default": "#93370d",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-warning-900",
+			"description": "Token from tokens.json",
+			"default": "#7a2e0e",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-danger-100",
+			"description": "Token from tokens.json",
+			"default": "#fee4e2",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-danger-200",
+			"description": "Token from tokens.json",
+			"default": "#fecdca",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-danger-300",
+			"description": "Token from tokens.json",
+			"default": "#fda29b",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-danger-400",
+			"description": "Token from tokens.json",
+			"default": "#f97066",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-danger-500",
+			"description": "Token from tokens.json",
+			"default": "#f04438",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-danger-600",
+			"description": "Token from tokens.json",
+			"default": "#d92d20",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-danger-700",
+			"description": "Token from tokens.json",
+			"default": "#b42318",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-danger-800",
+			"description": "Token from tokens.json",
+			"default": "#912018",
+			"values": []
+		},
+		{
+			"name": "--ds-color-utility-danger-900",
+			"description": "Token from tokens.json",
+			"default": "#7a271a",
+			"values": []
+		},
+		{
+			"name": "--ds-color-transparent-black-0",
+			"description": "Token from tokens.json",
+			"default": "#00000000",
+			"values": []
+		},
+		{
+			"name": "--ds-color-transparent-black-10",
+			"description": "Token from tokens.json",
+			"default": "#0000001a",
+			"values": []
+		},
+		{
+			"name": "--ds-color-transparent-black-25",
+			"description": "Token from tokens.json",
+			"default": "#00000040",
+			"values": []
+		},
+		{
+			"name": "--ds-color-transparent-black-90",
+			"description": "Token from tokens.json",
+			"default": "#000000e5",
+			"values": []
+		},
+		{
+			"name": "--ds-color-transparent-white-10",
+			"description": "Token from tokens.json",
+			"default": "#ffffff1a",
+			"values": []
+		},
+		{
+			"name": "--ds-color-transparent-white-25",
+			"description": "Token from tokens.json",
+			"default": "#ffffff40",
+			"values": []
+		},
+		{
+			"name": "--ds-color-transparent-white-50",
+			"description": "Token from tokens.json",
+			"default": "#ffffff80",
+			"values": []
+		},
+		{
+			"name": "--ds-color-transparent-white-75",
+			"description": "Token from tokens.json",
+			"default": "#ffffffbf",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-background-default",
+			"description": "Token from tokens.json",
+			"default": "#ffffff",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-background-reverse",
+			"description": "Token from tokens.json",
+			"default": "#001824",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-background-brand",
+			"description": "Token from tokens.json",
+			"default": "#ffd333",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-background-utility-danger",
+			"description": "Token from tokens.json",
+			"default": "#fee4e2",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-background-brand-subtle",
+			"description": "Token from tokens.json",
+			"default": "#e6f2f7",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-border-default",
+			"description": "Token from tokens.json",
+			"default": "#a3a3a3",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-border-subtle",
+			"description": "Token from tokens.json",
+			"default": "#d6d6d6",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-border-brand",
+			"description": "Token from tokens.json",
+			"default": "#0179b3",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-border-brand-alt",
+			"description": "Token from tokens.json",
+			"default": "#ffd333",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-border-brand-subtle",
+			"description": "Token from tokens.json",
+			"default": "#003048",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-border-brand-alt-subtle",
+			"description": "Token from tokens.json",
+			"default": "#ffedad",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-border-utility-danger",
+			"description": "Token from tokens.json",
+			"default": "#b42318",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-border-utility-info",
+			"description": "Token from tokens.json",
+			"default": "#4555d3",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-border-utility-info-bubble",
+			"description": "Token from tokens.json",
+			"default": "#0179b3",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-content-default",
+			"description": "Token from tokens.json",
+			"default": "#292929",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-content-medium",
+			"description": "Token from tokens.json",
+			"default": "#01618f",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-content-subtle",
+			"description": "Token from tokens.json",
+			"default": "#737373",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-content-reverse",
+			"description": "Token from tokens.json",
+			"default": "#ffffff",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-content-reverse-alt",
+			"description": "Token from tokens.json",
+			"default": "#cce4f0",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-content-brand",
+			"description": "Token from tokens.json",
+			"default": "#ffd333",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-content-utility-danger",
+			"description": "Token from tokens.json",
+			"default": "#b42318",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-content-utility-info",
+			"description": "Token from tokens.json",
+			"default": "#4555d3",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-color-content-utility-info-bubble",
+			"description": "Token from tokens.json",
+			"default": "#0179b3",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-10",
+			"description": "Token from tokens.json",
+			"default": "10",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-20",
+			"description": "Token from tokens.json",
+			"default": "20",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-30",
+			"description": "Token from tokens.json",
+			"default": "30",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-40",
+			"description": "Token from tokens.json",
+			"default": "40",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-50",
+			"description": "Token from tokens.json",
+			"default": "50",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-60",
+			"description": "Token from tokens.json",
+			"default": "60",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-70",
+			"description": "Token from tokens.json",
+			"default": "70",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-80",
+			"description": "Token from tokens.json",
+			"default": "80",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-90",
+			"description": "Token from tokens.json",
+			"default": "90",
+			"values": []
+		},
+		{
+			"name": "--ds-opacity-100",
+			"description": "Token from tokens.json",
+			"default": "100",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-md-x",
+			"description": "Token from tokens.json",
+			"default": "0rem",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-md-y",
+			"description": "Token from tokens.json",
+			"default": "0.375rem",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-md-blur",
+			"description": "Token from tokens.json",
+			"default": "0.375rem",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-md-spread",
+			"description": "Token from tokens.json",
+			"default": "0rem",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-md-color",
+			"description": "Token from tokens.json",
+			"default": "#00000040",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-sm-x",
+			"description": "Token from tokens.json",
+			"default": "0rem",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-sm-y",
+			"description": "Token from tokens.json",
+			"default": "0.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-sm-blur",
+			"description": "Token from tokens.json",
+			"default": "0.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-sm-spread",
+			"description": "Token from tokens.json",
+			"default": "0rem",
+			"values": []
+		},
+		{
+			"name": "--ds-shadow-sm-color",
+			"description": "Token from tokens.json",
+			"default": "#00000040",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-0",
+			"description": "Token from tokens.json",
+			"default": "0rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-2",
+			"description": "Token from tokens.json",
+			"default": "0.125rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-4",
+			"description": "Token from tokens.json",
+			"default": "0.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-8",
+			"description": "Token from tokens.json",
+			"default": "0.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-12",
+			"description": "Token from tokens.json",
+			"default": "0.75rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-16",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-20",
+			"description": "Token from tokens.json",
+			"default": "1.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-24",
+			"description": "Token from tokens.json",
+			"default": "1.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-32",
+			"description": "Token from tokens.json",
+			"default": "2rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-40",
+			"description": "Token from tokens.json",
+			"default": "2.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-48",
+			"description": "Token from tokens.json",
+			"default": "3rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-64",
+			"description": "Token from tokens.json",
+			"default": "4rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-80",
+			"description": "Token from tokens.json",
+			"default": "5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-96",
+			"description": "Token from tokens.json",
+			"default": "6rem",
+			"values": []
+		},
+		{
+			"name": "--ds-spacing-128",
+			"description": "Token from tokens.json",
+			"default": "8rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-family-figtree",
+			"description": "Token from tokens.json",
+			"default": "Figtree",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-weight-100",
+			"description": "Token from tokens.json",
+			"default": "100",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-weight-200",
+			"description": "Token from tokens.json",
+			"default": "200",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-weight-300",
+			"description": "Token from tokens.json",
+			"default": "300",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-weight-400",
+			"description": "Token from tokens.json",
+			"default": "400",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-weight-500",
+			"description": "Token from tokens.json",
+			"default": "500",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-weight-600",
+			"description": "Token from tokens.json",
+			"default": "600",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-weight-700",
+			"description": "Token from tokens.json",
+			"default": "700",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-weight-800",
+			"description": "Token from tokens.json",
+			"default": "800",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-weight-900",
+			"description": "Token from tokens.json",
+			"default": "900",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-12",
+			"description": "Token from tokens.json",
+			"default": "0.75rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-14",
+			"description": "Token from tokens.json",
+			"default": "0.875rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-16",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-18",
+			"description": "Token from tokens.json",
+			"default": "1.125rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-20",
+			"description": "Token from tokens.json",
+			"default": "1.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-24",
+			"description": "Token from tokens.json",
+			"default": "1.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-28",
+			"description": "Token from tokens.json",
+			"default": "1.75rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-32",
+			"description": "Token from tokens.json",
+			"default": "2rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-40",
+			"description": "Token from tokens.json",
+			"default": "2.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-48",
+			"description": "Token from tokens.json",
+			"default": "3rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-56",
+			"description": "Token from tokens.json",
+			"default": "3.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-64",
+			"description": "Token from tokens.json",
+			"default": "4rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-font-size-100",
+			"description": "Token from tokens.json",
+			"default": "6.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-16",
+			"description": "Token from tokens.json",
+			"default": "1rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-20",
+			"description": "Token from tokens.json",
+			"default": "1.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-24",
+			"description": "Token from tokens.json",
+			"default": "1.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-28",
+			"description": "Token from tokens.json",
+			"default": "1.75rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-32",
+			"description": "Token from tokens.json",
+			"default": "2rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-36",
+			"description": "Token from tokens.json",
+			"default": "2.25rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-40",
+			"description": "Token from tokens.json",
+			"default": "2.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-48",
+			"description": "Token from tokens.json",
+			"default": "3rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-56",
+			"description": "Token from tokens.json",
+			"default": "3.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-64",
+			"description": "Token from tokens.json",
+			"default": "4rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-72",
+			"description": "Token from tokens.json",
+			"default": "4.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-line-height-110",
+			"description": "Token from tokens.json",
+			"default": "6.875rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-letter-spacing-0",
+			"description": "Token from tokens.json",
+			"default": "0rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-letter-spacing-2",
+			"description": "Token from tokens.json",
+			"default": "0.125rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-letter-spacing-minus-2",
+			"description": "Token from tokens.json",
+			"default": "-0.125rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-letter-spacing-minus-1-half",
+			"description": "Token from tokens.json",
+			"default": "-0.0938rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-letter-spacing-minus-1",
+			"description": "Token from tokens.json",
+			"default": "-0.0625rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-letter-spacing-minus-half",
+			"description": "Token from tokens.json",
+			"default": "-0.0313rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-letter-spacing-half",
+			"description": "Token from tokens.json",
+			"default": "0.0313rem",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-text-transform-none",
+			"description": "Token from tokens.json",
+			"default": "none",
+			"values": []
+		},
+		{
+			"name": "--ds-typography-text-transform-uppercase",
+			"description": "Token from tokens.json",
+			"default": "uppercase",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-font-family",
+			"description": "Token from tokens.json",
+			"default": "Figtree",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-font-weight",
+			"description": "Token from tokens.json",
+			"default": "800",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-font-size",
+			"description": "Token from tokens.json",
+			"default": "5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-line-height",
+			"description": "Token from tokens.json",
+			"default": "6.875rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-letter-spacing",
+			"description": "Token from tokens.json",
+			"default": "-0.125rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-text-transform",
+			"description": "Token from tokens.json",
+			"default": "none",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-mobile-font-family",
+			"description": "Token from tokens.json",
+			"default": "Figtree",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-mobile-font-weight",
+			"description": "Token from tokens.json",
+			"default": "800",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-mobile-font-size",
+			"description": "Token from tokens.json",
+			"default": "2.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-mobile-line-height",
+			"description": "Token from tokens.json",
+			"default": "3rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-mobile-letter-spacing",
+			"description": "Token from tokens.json",
+			"default": "-0.0938rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-default-mobile-text-transform",
+			"description": "Token from tokens.json",
+			"default": "none",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-font-family",
+			"description": "Token from tokens.json",
+			"default": "Figtree",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-font-weight",
+			"description": "Token from tokens.json",
+			"default": "700",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-font-size",
+			"description": "Token from tokens.json",
+			"default": "4rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-line-height",
+			"description": "Token from tokens.json",
+			"default": "5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-letter-spacing",
+			"description": "Token from tokens.json",
+			"default": "-0.0938rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-text-transform",
+			"description": "Token from tokens.json",
+			"default": "none",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-mobile-font-family",
+			"description": "Token from tokens.json",
+			"default": "Figtree",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-mobile-font-weight",
+			"description": "Token from tokens.json",
+			"default": "600",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-mobile-font-size",
+			"description": "Token from tokens.json",
+			"default": "2rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-mobile-line-height",
+			"description": "Token from tokens.json",
+			"default": "2.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-mobile-letter-spacing",
+			"description": "Token from tokens.json",
+			"default": "-0.0625rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-display-sm-mobile-text-transform",
+			"description": "Token from tokens.json",
+			"default": "none",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-font-family",
+			"description": "Token from tokens.json",
+			"default": "Figtree",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-font-weight",
+			"description": "Token from tokens.json",
+			"default": "800",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-font-size",
+			"description": "Token from tokens.json",
+			"default": "3rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-line-height",
+			"description": "Token from tokens.json",
+			"default": "3.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-letter-spacing",
+			"description": "Token from tokens.json",
+			"default": "0.0313rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-text-transform",
+			"description": "Token from tokens.json",
+			"default": "none",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-mobile-font-family",
+			"description": "Token from tokens.json",
+			"default": "Figtree",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-mobile-font-weight",
+			"description": "Token from tokens.json",
+			"default": "800",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-mobile-font-size",
+			"description": "Token from tokens.json",
+			"default": "2.5rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-mobile-line-height",
+			"description": "Token from tokens.json",
+			"default": "3rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-mobile-letter-spacing",
+			"description": "Token from tokens.json",
+			"default": "0.0313rem",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-lg-mobile-text-transform",
+			"description": "Token from tokens.json",
+			"default": "none",
+			"values": []
+		},
+		{
+			"name": "--ds-theme-typography-headline-default-font-family",
+			"description": "Token from tokens.json",
+			"default": "Figtree",
+			"values": []
+		}
+	]
 }

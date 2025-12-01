@@ -3,8 +3,8 @@
 //  Reset
 // ======---------------------------------======
 // ---------------------------------------------
-@use "../abstracts/variables" as *;
-@use "../abstracts/typography-usage" as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/typography-usage' as *;
 
 // ====---------------====
 // Use a more-intuitive box-sizing model.
@@ -13,7 +13,7 @@
 ::slotted(*),
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 // ====---------------====
@@ -22,38 +22,38 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 // ====---------------====
 // Remove default margin
 // ====---------------====
 * {
-  margin: 0;
+	margin: 0;
 }
 
 // ====---------------====
 // Allow percentage-based heights in the application
 // ====---------------====
 html {
-  height: 100%;
+	height: 100%;
 }
 
 // ====---------------====
 // Typographic tweaks!
 // ====---------------====
 body {
-  @include ds-theme-typography-body-default;
+	@include ds-theme-typography-body-default;
 
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
 
-  background: var(--ds-theme-color-background-default);
+	background: var(--ds-theme-color-background-default);
 
-  color: var(--ds-theme-color-content-default);
+	color: var(--ds-theme-color-content-default);
 
-  -webkit-font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -64,7 +64,7 @@ h4,
 button,
 input,
 label {
-  line-height: 1.1;
+	line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
@@ -72,7 +72,7 @@ h1,
 h2,
 h3,
 h4 {
-  text-wrap: balance;
+	text-wrap: balance;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -80,25 +80,25 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
 textarea:not([rows]) {
-  min-height: 10em;
+	min-height: 10em;
 }
 
 /* Remove some list styles when they have a class */
 ul {
-  padding-inline-start: 1.3rem;
+	padding-inline-start: 1.3rem;
 }
 
 ul[class],
 ol[class] {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 
-  list-style: none;
+	list-style: none;
 }
 
 // ====---------------====
@@ -109,12 +109,12 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 img {
-  height: auto;
+	height: auto;
 }
 
 // ====---------------====
@@ -124,5 +124,5 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }

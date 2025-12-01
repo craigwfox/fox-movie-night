@@ -5,14 +5,14 @@
 // ---------------------------------------------
 
 // ===------ Imports ------===
-@use "sass:meta";
-@use "../../default/build/css/tokens.css";
-@use "../../default/build/css/default.css";
-@use "./abstracts/variables" as *;
-@use "./abstracts/typography-usage" as *;
+@use 'sass:meta';
+@use '../../default/build/css/tokens.css';
+@use '../../default/build/css/default.css';
+@use './abstracts/variables' as *;
+@use './abstracts/typography-usage' as *;
 
 // ===------ Load fonts ------===
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto+Condensed:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto+Condensed:wght@700&display=swap');
 
 // ===------ Set layers order ------===
 @layer vendor, global, composition, blocks, exceptions, utilities;
@@ -21,7 +21,7 @@
 //  Global layer
 // =======------------====
 @layer global {
-  @include meta.load-css("./base/reset");
+	@include meta.load-css('./base/reset');
 }
 
 // =======------------====
@@ -46,11 +46,11 @@
 //  Utilities
 // =======------------====
 @layer utilities {
-  @include meta.load-css("./utilities/colors");
-  @include meta.load-css("./utilities/visibility");
-  @include meta.load-css("./utilities/spacing");
-  @include meta.load-css("./utilities/display");
-  @include meta.load-css("./utilities/typography");
+	@include meta.load-css('./utilities/colors');
+	@include meta.load-css('./utilities/visibility');
+	@include meta.load-css('./utilities/spacing');
+	@include meta.load-css('./utilities/display');
+	@include meta.load-css('./utilities/typography');
 }
 
 // =======------------====

@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
-import LogoDark from "@/src/images/logo-dark.svg";
+import Link from 'next/link'
+import Image from 'next/image'
+import LogoDark from '@/src/images/logo-dark.svg'
 
 export default function PageHeader() {
 	return (
@@ -25,5 +25,5 @@ export default function PageHeader() {
 				</ul>
 			</nav>
 		</header>
-	);
+	)
 }

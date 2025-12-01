@@ -3,7 +3,7 @@
 //  Mixins
 // ======---------------------------------======
 // ---------------------------------------------
-@use "sass:math";
+@use 'sass:math';
 
 // =====-----------------------
 // Size Converters
@@ -71,7 +71,7 @@ $browser-context: 16; // Default
 	$factor: math.div(1, ($max-vw - $min-vw)) * ($max-value - $min-value);
 
 	$calc-value: unquote(
-		"#{ to-fixed($min-value - ($min-vw * $factor)) }rem + #{ to-fixed(100vw * $factor) }"
+		'#{ to-fixed($min-value - ($min-vw * $factor)) }rem + #{ to-fixed(100vw * $factor) }'
 	);
 
 	@return clamp(
