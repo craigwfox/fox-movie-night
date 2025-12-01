@@ -12,7 +12,7 @@ export async function login(formData: FormData) {
 	// in practice, you should validate your inputs
 	const data = {
 		email: formData.get('email') as string,
-		options: { emailRedirectTo: process.env.NEX_LOGIN_REDIRECT },
+		options: { emailRedirectTo: process.env.NEXT_LOGIN_REDIRECT },
 	}
 
 	const { error } = await supabase.auth.signInWithOtp(data)
