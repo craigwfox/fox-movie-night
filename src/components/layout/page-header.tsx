@@ -20,7 +20,7 @@ export default function PageHeader() {
 						<Link href="/">Home</Link>
 					</li>
 					<li>
-						<Link href="/">Add movie</Link>
+						<Link href="/add-movie">Add movie</Link>
 					</li>
 				</ul>
 			</nav>

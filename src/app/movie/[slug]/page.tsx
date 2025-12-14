@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { Suspense } from 'react'
 import { createClient } from '@/src/utils/supabase/server'
-import { MMMDYYYY } from '@/src/utils/formatting/dates'
+import { DateItem } from '@/src/utils/formatting/dates'
 
 function stringCommaList(str: string): string {
 	const strArry = JSON.parse(str)
@@ -41,6 +41,12 @@ async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
 		.eq('slug', slug)
 		.limit(1)
 	const movie: Movie = movies?.[0]
+	const watchDate = new DateItem(
+		new Date(movie.watch_date.replaceAll('-', '/'))
+	)
+	const releaseDate = new DateItem(
+		new Date(movie.release_date.replaceAll('-', '/'))
+	)
 
 	return movie ? (
 		<div>
@@ -50,7 +56,7 @@ async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
 				<h2>Watch info</h2>
 				<ul>
 					<li>
-						<strong>Watched:</strong> {MMMDYYYY(movie.watch_date)}
+						<strong>Watched:</strong> {watchDate.MMMDYYYY}
 					</li>
 					{movie.picked && movie.picked != 'none' ? (
 						<li>
@@ -96,7 +102,7 @@ async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
 			<section>
 				<h2>Movie info</h2>
 				<h3>Released Date</h3>
-				<p>{MMMDYYYY(movie.release_date)}</p>
+				<p>{releaseDate.MMMDYYYY}</p>
 
 				<h3>Genres</h3>
 				<p>{stringCommaList(movie.genre)}</p>

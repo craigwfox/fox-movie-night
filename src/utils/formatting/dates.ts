@@ -1,9 +1,25 @@
-// converts date string to Jan 1, 2001
-export function MMMDYYYY(date: string) {
-	const dateItem = new Date(date.replaceAll('-', '/'))
-	const day = dateItem.getDate()
-	const month = dateItem.toLocaleString('default', { month: 'short' })
-	const year = dateItem.getFullYear()
+export class DateItem {
+	date: Date
+	day: number
+	month: number
+	monthShort: string
+	year: number
 
-	return `${month} ${day}, ${year}`
+	constructor(date: Date) {
+		this.date = date
+		this.day = this.date.getDate()
+		this.month = this.date.getMonth()
+		this.monthShort = this.date.toLocaleString('default', {
+			month: 'short',
+		})
+		this.year = this.date.getFullYear()
+	}
+
+	get MMMDYYYY() {
+		return `${this.monthShort} ${this.day}, ${this.year}`
+	}
+
+	get YYYYMMDD() {
+		return `${this.year}-${this.month + 1}-${this.day}`
+	}
 }

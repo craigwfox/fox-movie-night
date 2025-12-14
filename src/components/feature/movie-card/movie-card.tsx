@@ -1,7 +1,11 @@
+import { DateItem } from '@/src/utils/formatting/dates'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function MovieCard({ movie }: { movie: Movie }) {
+	const watchDate = new DateItem(
+		new Date(movie.watch_date.replaceAll('-', '/'))
+	)
 	return (
 		<article className="movie-card" aria-labelledby={movie.id}>
 			<div className="movie-card__image">
@@ -20,7 +24,7 @@ export default function MovieCard({ movie }: { movie: Movie }) {
 						<h2 id={movie.id}>{movie.name}</h2>
 					</Link>
 					<ul>
-						<li>{movie.watch_date}</li>
+						<li>{watchDate.MMMDYYYY}</li>
 						{movie.picked && movie.picked != 'none' ? (
 							<li>
 								<strong>Picked:</strong> {movie.picked}
