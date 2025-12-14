@@ -12,6 +12,7 @@
 
 		background: var(--ds-theme-color-background-reverse);
 
+		color: var(--ds-theme-color-content-reverse);
 		font-family: var(--ds-typography-font-family-figtree), sans-serif;
 	}
 

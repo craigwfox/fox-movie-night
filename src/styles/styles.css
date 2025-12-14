@@ -19,6 +19,12 @@
 @import 'composition/layout.css';
 
 /* ====---------------====
+	Components
+=======---------------= */
+@import 'components/form-controls.css';
+@import 'components/pill.css';
+
+/* ====---------------====
 	Blocks
 =======---------------= */
 @import 'blocks/page-header.css';
