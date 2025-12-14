@@ -28,6 +28,7 @@
 	Blocks
 =======---------------= */
 @import 'blocks/page-header.css';
+@import 'blocks/page-footer.css';
 @import 'blocks/movie-single.css';
 @import 'blocks/movie-card.css';
 

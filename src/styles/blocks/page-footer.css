@@ -1,0 +1,20 @@
+/* ------------------------------------======
+======---------------------------------======
+	Page Footer
+======---------------------------------======
+======---------------------------------=== */
+@layer block {
+	.page-footer {
+		max-width: var(--page-max-width);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: var(--ds-spacing-16) var(--ds-spacing-24);
+
+		margin-inline: auto;
+		padding: clamp(1rem, 0.773rem + 0.97vw, 1.5rem) var(--page-padding);
+
+		border-block-start: 4px solid var(--ds-theme-color-border-brand-alt-subtle);
+	}
+}

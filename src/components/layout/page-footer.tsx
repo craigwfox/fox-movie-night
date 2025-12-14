@@ -1,8 +1,9 @@
 export default function PageFooter() {
 	return (
-		<footer className="site-footer">
+		<footer className="page-footer">
 			<p>
-				By <a href="https://craigwfox.com">Craig Fox</a>
+				&copy; {new Date().getFullYear()}{' '}
+				<a href="https://craigwfox.com">Craig Fox</a>
 			</p>
 		</footer>
 	)
