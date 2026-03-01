@@ -17,11 +17,19 @@
 	Composition
 =======---------------= */
 @import 'composition/layout.css';
+@import 'composition/buttons.css';
+
+/* ====---------------====
+	Components
+=======---------------= */
+@import 'components/form-controls.css';
+@import 'components/pill.css';
 
 /* ====---------------====
 	Blocks
 =======---------------= */
 @import 'blocks/page-header.css';
+@import 'blocks/page-footer.css';
 @import 'blocks/movie-single.css';
 @import 'blocks/movie-card.css';
 

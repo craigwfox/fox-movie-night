@@ -9,6 +9,7 @@ interface Movie {
 	release_date: string
 	director: string
 	top_cast: string
+	writer?: string
 	genre: string
 	tmdb_id: string
 	tmdb_user_score: string

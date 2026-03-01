@@ -1,0 +1,22 @@
+import { getMovies } from '@/src/utils/supabase/queries'
+import MovieGridClient from './movie-grid-client'
+
+export async function MovieGrid() {
+	const movies = await getMovies()
+
+	const yearList = [
+		'All',
+		...new Set(movies?.map((x) => new Date(x.watch_date).getFullYear())),
+	]
+		.sort()
+		.reverse()
+
+	return (
+		<section className="movie-grid__wrapper" aria-labelledby="movie-grid">
+			<MovieGridClient
+				movies={movies?.reverse() || []}
+				yearList={yearList as number[]}
+			/>
+		</section>
+	)
+}

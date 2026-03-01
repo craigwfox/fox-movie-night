@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import LogoDark from '@/src/images/logo-dark.svg'
+import { isUserLoggedIn } from '@/src/utils/supabase/auth'
 
-export default function PageHeader() {
+export default async function PageHeader() {
+	const loggedIn = await isUserLoggedIn()
+
 	return (
 		<header className="page-header">
 			<Link href="/">
@@ -12,6 +15,7 @@ export default function PageHeader() {
 					width={157}
 					height={56}
 					className="object-contain"
+					loading="eager"
 				/>
 			</Link>
 			<nav className="page-header__nav" aria-label="Primary">
@@ -20,7 +24,11 @@ export default function PageHeader() {
 						<Link href="/">Home</Link>
 					</li>
 					<li>
-						<Link href="/">Add movie</Link>
+						{loggedIn ? (
+							<Link href="/add-movie">Add movie</Link>
+						) : (
+							<Link href="/login">Login</Link>
+						)}
 					</li>
 				</ul>
 			</nav>

@@ -1,44 +1,25 @@
+/* Main landing page
+ * ------------------------
+ * - List all movies listed in supabase
+ * - Default to current year, with filters for all and each year
+ * - Movie card component for each card
+ */
+
 import React, { Suspense } from 'react'
-import { createClient } from '@/src/utils/supabase/server'
-import MovieCard from '../components/feature/movie-card/movie-card'
+import { MovieGrid } from '../components/movie-list/movie-grid/movie-grid'
+import BaseLoader from '../components/loaders/base-loader'
 
 export default function Home() {
 	return (
-		<main>
-			<Suspense
-				fallback={
-					<section>
-						<p>Loading movies…</p>
-					</section>
-				}
-			>
-				{/* MoviesList is an async Server Component that does the supabase/cookies work */}
-				<MoviesList />
-			</Suspense>
-		</main>
-	)
-}
-
-async function MoviesList() {
-	const supabase = await createClient()
-	const { data: movies, error } = await supabase
-		.from('movies')
-		.select()
-		.range(50, 70)
-
-	if (error) console.log('❗ supabase error:', error)
-
-	return movies && movies.length > 0 ? (
-		<section className="section-wrapper">
-			<div className="movie-grid">
-				{[...movies].reverse().map((movie: Movie) => (
-					<MovieCard key={movie.id} movie={movie} />
-				))}
+		<main className="movie-list section-wrapper">
+			<div className="movie-list__header">
+				<h1 className="title-page">Watch list</h1>
 			</div>
-		</section>
-	) : (
-		<section>
-			<p>No movies yet.</p>
-		</section>
+			<div className="movie-list__grid">
+				<Suspense fallback={<BaseLoader message="⏳ Loading Movies..." />}>
+					<MovieGrid />
+				</Suspense>
+			</div>
+		</main>
 	)
 }

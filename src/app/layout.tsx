@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import '../styles/styles.css'
 import { Figtree } from 'next/font/google'
 import PageFooter from '../components/layout/page-footer'
@@ -22,7 +23,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${figtreeSans.variable}`}>
-				<PageHeader />
+				<Suspense fallback={<header className="page-header" />}>
+					<PageHeader />
+				</Suspense>
 				{children}
 				<PageFooter />
 			</body>
