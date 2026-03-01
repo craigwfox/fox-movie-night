@@ -6,12 +6,23 @@ import { notFound } from 'next/navigation'
 import { isUserLoggedIn } from '@/src/utils/supabase/auth'
 
 function stringCommaList(str: string): string {
-	const strArry = JSON.parse(str)
-	return strArry.length > 1 ? strArry.join(', ') : strArry.join('')
+	try {
+		const strArray = JSON.parse(str)
+		return Array.isArray(strArray) ? strArray.join(', ') : str
+	} catch {
+		// Fallback for non-JSON strings
+		return str
+	}
 }
 
 function stringToArry(str: string): string[] {
-	return JSON.parse(str)
+	try {
+		const parsed = JSON.parse(str)
+		return Array.isArray(parsed) ? parsed : []
+	} catch {
+		// Fallback for comma-separated strings
+		return str.split(',').map((item) => item.trim())
+	}
 }
 
 export default async function MovieSingle({

@@ -26,3 +26,18 @@ export const getMovieBySlug = cache(async (slug: string) => {
 	if (error) throw error
 	return data
 })
+
+export const insertMovie = async (movie: Movie) => {
+	const supabase = await createClient()
+	const { data, error } = await supabase
+		.from('movies')
+		.insert([movie])
+		.select()
+		.single()
+
+	if (error) {
+		throw new Error(`Failed to insert movie: ${error.message}`)
+	}
+
+	return data as Movie
+}
