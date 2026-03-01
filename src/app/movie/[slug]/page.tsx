@@ -1,10 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Suspense } from 'react'
-import { getMovieBySlug } from '@/src/utils/supabase/queries'
+import { getMovieBySlug, getMovies } from '@/src/utils/supabase/queries'
 import { DateItem } from '@/src/utils/formatting/dates'
 import { notFound } from 'next/navigation'
 import { isUserLoggedIn } from '@/src/utils/supabase/auth'
+
+export async function generateStaticParams() {
+	const movies = await getMovies()
+	return (movies ?? []).map((movie) => ({ slug: movie.slug }))
+}
 
 function stringCommaList(str: string): string {
 	try {
@@ -57,10 +62,10 @@ async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
 
 	const movie: Movie = movieData
 	const watchDate = new DateItem(
-		new Date(movie.watch_date.replaceAll('-', '/'))
+		new Date(movie.watch_date.replaceAll('-', '/')),
 	)
 	const releaseDate = new DateItem(
-		new Date(movie.release_date.replaceAll('-', '/'))
+		new Date(movie.release_date.replaceAll('-', '/')),
 	)
 
 	return (
@@ -165,7 +170,13 @@ async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
 	)
 }
 
-async function UpdateButton({ slug, loggedIn }: { slug: string; loggedIn: boolean }) {
+async function UpdateButton({
+	slug,
+	loggedIn,
+}: {
+	slug: string
+	loggedIn: boolean
+}) {
 	if (!loggedIn) return null
 
 	return (

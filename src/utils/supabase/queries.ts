@@ -1,8 +1,20 @@
-import { cache } from 'react'
+import { createClient as createSupabaseClient } from '@supabase/supabase-js'
+import { cacheTag } from 'next/cache'
 import { createClient } from '@/src/utils/supabase/server'
 
-export const getMovies = cache(async () => {
-	const supabase = await createClient()
+// Cookie-free client safe to use inside "use cache" — read-only, no auth needed
+function createAnonClient() {
+	return createSupabaseClient(
+		process.env.NEXT_PUBLIC_SUPABASE_URL!,
+		process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!,
+	)
+}
+
+export async function getMovies() {
+	'use cache'
+	cacheTag('movies')
+
+	const supabase = createAnonClient()
 	const { data, error } = (await supabase.from('movies').select('*')) as {
 		data: Movie[] | null
 		error: unknown
@@ -10,10 +22,13 @@ export const getMovies = cache(async () => {
 
 	if (error) throw error
 	return data
-})
+}
 
-export const getMovieBySlug = cache(async (slug: string) => {
-	const supabase = await createClient()
+export async function getMovieBySlug(slug: string) {
+	'use cache'
+	cacheTag('movies')
+
+	const supabase = createAnonClient()
 	const { data, error } = (await supabase
 		.from('movies')
 		.select('*')
@@ -25,7 +40,7 @@ export const getMovieBySlug = cache(async (slug: string) => {
 
 	if (error) throw error
 	return data
-})
+}
 
 export const insertMovie = async (movie: Movie) => {
 	const supabase = await createClient()

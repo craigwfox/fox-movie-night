@@ -1,3 +1,4 @@
+import { revalidateTag } from 'next/cache'
 import { createClient } from '@/src/utils/supabase/server'
 import { isUserLoggedIn } from '@/src/utils/supabase/auth'
 import { NextRequest, NextResponse } from 'next/server'
@@ -23,7 +24,7 @@ export async function GET() {
 						'Access-Control-Allow-Methods': 'GET, OPTIONS',
 						'Access-Control-Allow-Headers': 'Content-Type',
 					},
-				}
+				},
 			)
 		}
 
@@ -36,7 +37,7 @@ export async function GET() {
 					'Access-Control-Allow-Methods': 'GET, OPTIONS',
 					'Access-Control-Allow-Headers': 'Content-Type',
 				},
-			}
+			},
 		)
 	} catch (error) {
 		console.error('❗ error:', error)
@@ -49,7 +50,7 @@ export async function GET() {
 					'Access-Control-Allow-Methods': 'GET, OPTIONS',
 					'Access-Control-Allow-Headers': 'Content-Type',
 				},
-			}
+			},
 		)
 	}
 }
@@ -58,10 +59,7 @@ export async function POST(request: NextRequest) {
 	try {
 		const loggedIn = await isUserLoggedIn()
 		if (!loggedIn) {
-			return NextResponse.json(
-				{ error: 'Unauthorized' },
-				{ status: 401 }
-			)
+			return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 		}
 
 		const body = (await request.json()) as MovieFormData
@@ -97,21 +95,18 @@ export async function POST(request: NextRequest) {
 			console.error('❗ insert error:', error)
 			return NextResponse.json(
 				{ error: `Failed to insert movie: ${error.message}` },
-				{ status: 400 }
+				{ status: 400 },
 			)
 		}
 
-		return NextResponse.json(
-			{ movie: insertedMovie },
-			{ status: 201 }
-		)
+		revalidateTag('movies', {})
+
+		return NextResponse.json({ movie: insertedMovie }, { status: 201 })
 	} catch (error) {
 		console.error('❗ POST error:', error)
-		const message = error instanceof Error ? error.message : 'Internal server error'
-		return NextResponse.json(
-			{ error: message },
-			{ status: 500 }
-		)
+		const message =
+			error instanceof Error ? error.message : 'Internal server error'
+		return NextResponse.json({ error: message }, { status: 500 })
 	}
 }
 
@@ -119,10 +114,7 @@ export async function PATCH(request: NextRequest) {
 	try {
 		const loggedIn = await isUserLoggedIn()
 		if (!loggedIn) {
-			return NextResponse.json(
-				{ error: 'Unauthorized' },
-				{ status: 401 }
-			)
+			return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
 		}
 
 		const body = (await request.json()) as MovieFormData & { movieId: string }
@@ -131,7 +123,7 @@ export async function PATCH(request: NextRequest) {
 		if (!movieId) {
 			return NextResponse.json(
 				{ error: 'Movie ID is required' },
-				{ status: 400 }
+				{ status: 400 },
 			)
 		}
 
@@ -167,21 +159,18 @@ export async function PATCH(request: NextRequest) {
 			console.error('❗ update error:', error)
 			return NextResponse.json(
 				{ error: `Failed to update movie: ${error.message}` },
-				{ status: 400 }
+				{ status: 400 },
 			)
 		}
 
-		return NextResponse.json(
-			{ movie: updatedMovie },
-			{ status: 200 }
-		)
+		revalidateTag('movies', {})
+
+		return NextResponse.json({ movie: updatedMovie }, { status: 200 })
 	} catch (error) {
 		console.error('❗ PATCH error:', error)
-		const message = error instanceof Error ? error.message : 'Internal server error'
-		return NextResponse.json(
-			{ error: message },
-			{ status: 500 }
-		)
+		const message =
+			error instanceof Error ? error.message : 'Internal server error'
+		return NextResponse.json({ error: message }, { status: 500 })
 	}
 }
 
