@@ -1,12 +1,8 @@
-import { createClient } from '@/src/utils/supabase/server'
+import { getMovies } from '@/src/utils/supabase/queries'
 import MovieGridClient from './movie-grid-client'
 
 export async function MovieGrid() {
-	const supabase = await createClient()
-
-	const { data: movies } = (await supabase.from('movies').select()) as {
-		data: Movie[] | null
-	}
+	const movies = await getMovies()
 
 	const yearList = [
 		'All',

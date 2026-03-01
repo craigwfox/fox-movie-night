@@ -1,38 +1,46 @@
-.pill {
-	padding: 0.1em 0.5em;
+/* ------------------------------------======
+======---------------------------------======
+	Pills
+======---------------------------------======
+======---------------------------------=== */
 
-	background: var(--ds-theme-button-primary-color-background-default);
-	border-radius: var(--ds-theme-border-radius-round);
+@layer composition {
+	.pill {
+		padding: 0.1em 0.5em;
 
-	color: var(--ds-theme-button-primary-color-content-default);
-	font-family: var(--ds-theme-button-size-small-typography-font-family);
-	font-size: var(--ds-theme-button-size-small-typography-font-size);
-	font-weight: var(--ds-theme-button-size-small-typography-font-weight);
+		background: var(--ds-theme-button-primary-color-background-default);
+		border-radius: var(--ds-theme-border-radius-round);
 
-	cursor: pointer;
+		color: var(--ds-theme-button-primary-color-content-default);
+		font-family: var(--ds-theme-button-size-small-typography-font-family);
+		font-size: var(--ds-theme-button-size-small-typography-font-size);
+		font-weight: var(--ds-theme-button-size-small-typography-font-weight);
 
-	&:hover {
-		background: var(--ds-theme-button-primary-color-background-hover);
+		cursor: pointer;
 
-		color: var(--ds-theme-button-primary-color-content-hover);
-	}
+		&:hover {
+			background: var(--ds-theme-button-primary-color-background-hover);
 
-	&:focus {
-		background: var(--ds-theme-button-primary-color-background-focus);
+			color: var(--ds-theme-button-primary-color-content-hover);
+		}
 
-		color: var(--ds-theme-button-primary-color-content-focus);
-	}
+		&:focus {
+			background: var(--ds-theme-button-primary-color-background-focus);
 
-	&:active {
-		background: var(--ds-theme-button-primary-color-background-active);
+			color: var(--ds-theme-button-primary-color-content-focus);
+		}
 
-		color: var(--ds-theme-button-primary-color-content-active);
-	}
+		&:active {
+			background: var(--ds-theme-button-primary-color-background-active);
 
-	&[aria-current],
-	&[aria-pressed='true'] {
-		background: var(--ds-theme-button-primary-color-background-hover);
+			color: var(--ds-theme-button-primary-color-content-active);
+		}
 
-		color: var(--ds-theme-button-primary-color-content-hover);
+		&[aria-current],
+		&[aria-pressed='true'] {
+			background: var(--ds-theme-button-primary-color-background-hover);
+
+			color: var(--ds-theme-button-primary-color-content-hover);
+		}
 	}
 }

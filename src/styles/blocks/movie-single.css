@@ -5,6 +5,88 @@
 ======---------------------------------=== */
 @layer block {
 	.movie-single {
-		color: var(--ds-theme-color-content-reverse);
+		--ms-gap: 2rem;
+		--ms-border-size: 0.5rem;
+		--ms-border: var(--ms-border-size) solid
+			var(--ds-theme-color-border-brand-subtle);
+
+		width: 100%;
+
+		display: grid;
+		gap: 2rem;
+	}
+
+	.movie-single__header {
+		padding-block-end: var(--ms-gap);
+
+		border-block-end: var(--ms-border);
+	}
+
+	.movie-single__content {
+		display: grid;
+		gap: var(--ms-gap);
+
+		@media (min-width: 767px) {
+			grid-template-columns: minmax(250px, 350px) 1fr;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		p + table {
+			margin-block-start: 0.2rem;
+		}
+	}
+
+	.movie-single__watch {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.movie-single__info {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+
+		h2,
+		h3,
+		h4 {
+			margin-block-start: 0;
+			margin-block-end: 9px;
+		}
+
+		p + h2,
+		p + h3,
+		p + h4 {
+			margin-block-start: 0.5em;
+		}
+
+		h3 {
+			margin-block-end: 0.2em;
+		}
+
+		div:has(h4) {
+			h4 {
+				margin-block-end: 0.5em;
+			}
+
+			+ div {
+				margin-block-start: 1em;
+			}
+		}
+
+		ul {
+			li {
+				+ li {
+					margin-block-start: 0.25em;
+				}
+			}
+		}
+
+		@media (min-width: 767px) {
+			padding-inline-start: var(--ms-gap);
+			border-inline-start: var(--ms-border);
+		}
 	}
 }

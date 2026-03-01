@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<main className="movie-list section-wrapper">
 			<div className="movie-list__header">
-				<h1>Watch list</h1>
+				<h1 className="title-page">Watch list</h1>
 			</div>
 			<div className="movie-list__grid">
 				<Suspense fallback={<BaseLoader message="⏳ Loading Movies..." />}>

@@ -5,8 +5,9 @@ export default function LoginPage() {
 		<form>
 			<label htmlFor="email">Email:</label>
 			<input id="email" name="email" type="email" required />
-			<label htmlFor="password">Password:</label>
-			<button formAction={login}>Log in</button>
+			<button className="button button--primary" formAction={login}>
+				Log in
+			</button>
 		</form>
 	)
 }
