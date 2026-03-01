@@ -63,7 +63,10 @@ export function AddMovieForm({
 	const [selectedMovieId, setSelectedMovieId] = useState<number>()
 	const [showResults, setShowResults] = useState(false)
 	const [isSubmitting, setIsSubmitting] = useState(false)
-	const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
+	const [message, setMessage] = useState<{
+		type: 'success' | 'error'
+		text: string
+	} | null>(null)
 
 	const {
 		control,
@@ -114,7 +117,7 @@ export function AddMovieForm({
 		setShowResults(true)
 		try {
 			const response = await fetch(
-				`/api/search?query=${encodeURIComponent(watchName)}`
+				`/api/search?query=${encodeURIComponent(watchName)}`,
 			)
 			if (!response.ok) {
 				throw new Error('Search failed')
@@ -174,12 +177,17 @@ export function AddMovieForm({
 				if (response.status === 401) {
 					setMessage({
 						type: 'error',
-						text: 'You must be logged in to ' + (isEditMode ? 'update' : 'add') + ' a movie',
+						text:
+							'You must be logged in to ' +
+							(isEditMode ? 'update' : 'add') +
+							' a movie',
 					})
 					router.push('/login')
 					return
 				}
-				throw new Error(errorData.error || `Failed to ${isEditMode ? 'update' : 'add'} movie`)
+				throw new Error(
+					errorData.error || `Failed to ${isEditMode ? 'update' : 'add'} movie`,
+				)
 			}
 
 			const result = await response.json()
@@ -195,7 +203,9 @@ export function AddMovieForm({
 		} catch (error) {
 			console.error('Error submitting form:', error)
 			const errorText =
-				error instanceof Error ? error.message : `Failed to ${mode === 'edit' ? 'update' : 'add'} movie`
+				error instanceof Error
+					? error.message
+					: `Failed to ${mode === 'edit' ? 'update' : 'add'} movie`
 			setMessage({
 				type: 'error',
 				text: errorText,
@@ -206,8 +216,11 @@ export function AddMovieForm({
 	}
 
 	return (
-		<form onSubmit={handleSubmit(onSubmit)} className="add-movie-form">
-			<section id="watch-info">
+		<form
+			onSubmit={handleSubmit(onSubmit)}
+			className="form-wrapper add-movie-form"
+		>
+			<section id="watch-info" className="form-section">
 				<h2>Watch Information</h2>
 
 				<Controller
@@ -233,15 +246,10 @@ export function AddMovieForm({
 						control={control}
 						rules={{ required: true }}
 						render={({ field }) => (
-								<>
-									<input
-										type="date"
-										id="watch_date"
-										required
-										{...field}
-									/>
-									{errors.watch_date && <span className="message">Required</span>}
-								</>
+							<>
+								<input type="date" id="watch_date" required {...field} />
+								{errors.watch_date && <span className="message">Required</span>}
+							</>
 						)}
 					/>
 				</div>
@@ -297,16 +305,16 @@ export function AddMovieForm({
 					)}
 				/>
 
-{mode === 'add' && (
-				<button
-					type="button"
-					onClick={handleTmdbSearch}
-					disabled={isSearching}
-					className="btn btn-secondary"
-				>
-					{isSearching ? 'Searching...' : 'Search TMDB'}
-				</button>
-			)}
+				{mode === 'add' && (
+					<button
+						type="button"
+						onClick={handleTmdbSearch}
+						disabled={isSearching}
+						className="button button-secondary"
+					>
+						{isSearching ? 'Searching...' : 'Search TMDB'}
+					</button>
+				)}
 			</section>
 
 			{showResults && mode === 'add' && (
@@ -321,7 +329,7 @@ export function AddMovieForm({
 				</section>
 			)}
 
-			<section id="tmdb-data">
+			<section id="tmdb-data" className="form-section">
 				<h2>Movie Data</h2>
 
 				<Controller
@@ -379,15 +387,12 @@ export function AddMovieForm({
 						control={control}
 						rules={{ required: true }}
 						render={({ field }) => (
-								<>
-									<input
-										type="date"
-										id="release_date"
-										required
-										{...field}
-									/>
-									{errors.release_date && <span className="message">Required</span>}
-								</>
+							<>
+								<input type="date" id="release_date" required {...field} />
+								{errors.release_date && (
+									<span className="message">Required</span>
+								)}
+							</>
 						)}
 					/>
 				</div>
@@ -505,19 +510,27 @@ export function AddMovieForm({
 				/>
 			</section>
 
-		{message && (
-			<div className={`message-banner message-${message.type}`}>
-				{message.text}
-			</div>
-		)}
+			<div className="form-controls">
+				{message && (
+					<div className={`message-banner message-${message.type}`}>
+						{message.text}
+					</div>
+				)}
 
-		<button
-			type="submit"
-			className="btn btn-primary"
-			disabled={isSubmitting}
-		>
-			{isSubmitting ? (mode === 'edit' ? 'Updating Movie...' : 'Adding Movie...') : (mode === 'edit' ? 'Update Movie' : 'Add Movie')}
-		</button>
-	</form>
+				<button
+					type="submit"
+					className="button button-primary"
+					disabled={isSubmitting}
+				>
+					{isSubmitting
+						? mode === 'edit'
+							? 'Updating Movie...'
+							: 'Adding Movie...'
+						: mode === 'edit'
+							? 'Update Movie'
+							: 'Add Movie'}
+				</button>
+			</div>
+		</form>
 	)
 }

@@ -5,7 +5,70 @@
 ======---------------------------------=== */
 
 @layer composition {
+	.form-wrapper {
+		display: grid;
+		gap: 2rem;
+		grid-template-areas: 'watch' 'data' 'controls';
+		grid-template-columns: 1fr;
+		grid-template-areas: repeat(3, auto);
+		justify-items: start;
+
+		&:has(#tmdb-results) {
+			grid-template-areas: 'watch tmdb' 'data tmdb' 'controls tmdb' '___ tmdb';
+			grid-template-columns: 3fr 1fr;
+			grid-template-areas: repeat(4, auto);
+			align-items: start;
+		}
+	}
+
+	#watch-info {
+		grid-area: watch;
+	}
+
+	#tmdb-results {
+		grid-area: tmdb;
+	}
+
+	.tmdb-results-list {
+		display: grid;
+		gap: 2rem;
+	}
+
+	.tmdb-result-item {
+		display: grid;
+		gap: 1rem;
+	}
+
+	.tmdb-result-content {
+		display: grid;
+		gap: 0.7em;
+		justify-items: start;
+
+		* {
+			margin: 0;
+		}
+	}
+
+	#tmdb-data {
+		grid-area: data;
+	}
+
+	.form-controls {
+		grid-area: controls;
+	}
+
+	.form-section {
+		width: 100%;
+		max-width: 800px;
+
+		display: grid;
+		gap: 0.7em;
+		justify-items: start;
+	}
+
 	.form-control {
+		width: 100%;
+
 		display: grid;
 		grid-template-columns: 1fr 2rem;
 		grid-template-areas: repeat(3, auto);
@@ -21,10 +84,13 @@
 			font-weight: var(--ds-theme-typography-label-default-font-weight);
 		}
 
-		input {
+		input,
+		select,
+		textarea {
 			grid-area: input;
 
-			max-width: 25rem;
+			width: 100%;
+			max-width: 35rem;
 
 			padding: var(--ds-theme-form-control-spacing-padding-block)
 				var(--ds-theme-form-control-spacing-padding-inline);

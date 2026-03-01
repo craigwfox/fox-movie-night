@@ -14,10 +14,6 @@ export function TmdbResultItem({
 	onSelect,
 	isSelected,
 }: TMDBResultItemProps) {
-	const posterUrl = movie.poster_path
-		? `https://image.tmdb.org/t/p/w342${movie.poster_path}`
-		: '/placeholder-poster.jpg'
-
 	const year = movie.release_date
 		? new Date(movie.release_date).getFullYear()
 		: 'Unknown'
@@ -25,15 +21,14 @@ export function TmdbResultItem({
 	return (
 		<div className="tmdb-result-item">
 			<div className="tmdb-result-poster">
-				<Image
-					src={posterUrl}
-					alt={movie.title}
-					width={150}
-					height={225}
-					onError={(e) => {
-						;(e.target as HTMLImageElement).src = '/placeholder-poster.jpg'
-					}}
-				/>
+				{movie.poster_path && (
+					<Image
+						src={`https://image.tmdb.org/t/p/w342${movie.poster_path}`}
+						alt={movie.title}
+						width={150}
+						height={225}
+					/>
+				)}
 			</div>
 			<div className="tmdb-result-content">
 				<h3 className="tmdb-result-title">{movie.title}</h3>
@@ -42,7 +37,7 @@ export function TmdbResultItem({
 				<button
 					type="button"
 					onClick={() => onSelect(movie)}
-					className={`btn ${isSelected ? 'btn-primary' : 'btn-secondary'}`}
+					className={`button ${isSelected ? 'button-primary' : 'button-secondary'}`}
 				>
 					Select movie
 				</button>

@@ -5,6 +5,7 @@ interface TextareaProps {
 	value: string
 	onChange: (value: string) => void
 	message?: string
+	rowCount?: number
 }
 
 export function Textarea({
@@ -14,6 +15,7 @@ export function Textarea({
 	value,
 	onChange,
 	message,
+	rowCount
 }: TextareaProps) {
 	return (
 		<div className="form-control">
@@ -23,6 +25,7 @@ export function Textarea({
 				onChange={(e) => onChange(e.target.value)}
 				id={id}
 				required={required ? true : undefined}
+				rows={rowCount ? rowCount : 10}
 			/>
 			{message ? <span className="message">{message}</span> : ''}
 		</div>

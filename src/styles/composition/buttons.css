@@ -22,6 +22,7 @@
 		line-height: var(--ds-theme-button-size-default-typography-line-height);
 
 		cursor: pointer;
+		text-decoration: none;
 
 		&:hover {
 			--button-background: var(
