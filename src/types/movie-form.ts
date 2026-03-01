@@ -2,7 +2,7 @@ export type MovieFormData = {
 	// Watch information
 	watch_name: string
 	watch_date: string
-	craig_pick: 'none' | 'craig' | 'rebecca'
+	craig_pick: 'none' | 'Craig' | 'Rebecca'
 	craig_rating: 'great' | 'good' | 'ok' | 'bad' | 'absolute_trash'
 	rebecca_rating: 'great' | 'good' | 'ok' | 'bad' | 'absolute_trash'
 

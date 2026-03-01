@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Suspense } from 'react'
 import { getMovieBySlug } from '@/src/utils/supabase/queries'
 import { DateItem } from '@/src/utils/formatting/dates'
@@ -67,7 +68,7 @@ async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
 			<div className="movie-single__header">
 				<h1 className="title-page">{movie.name}</h1>
 				<Suspense fallback={null}>
-					<UpdateButton />
+					<UpdateButton slug={slug} loggedIn={loggedIn} />
 				</Suspense>
 			</div>
 			<div className="movie-single__content">
@@ -164,10 +165,12 @@ async function MovieItem({ params }: { params: Promise<{ slug: string }> }) {
 	)
 }
 
-async function UpdateButton() {
-	const loggedIn = await isUserLoggedIn()
-
+async function UpdateButton({ slug, loggedIn }: { slug: string; loggedIn: boolean }) {
 	if (!loggedIn) return null
 
-	return <button className="button button--primary">Update movie</button>
+	return (
+		<Link href={`/edit-movie/${slug}`} className="button button--primary">
+			Update movie
+		</Link>
+	)
 }

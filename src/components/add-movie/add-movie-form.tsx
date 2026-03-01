@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useForm, Controller } from 'react-hook-form'
 import { MovieFormData } from '@/src/types/movie-form'
@@ -40,18 +40,37 @@ const formatPicked = (picked: string): string => {
 	const pickedMap: Record<string, string> = {
 		none: 'None',
 		craig: 'Craig',
+		Craig: 'Craig',
 		rebecca: 'Rebecca',
+		Rebecca: 'Rebecca',
 	}
 	return pickedMap[picked] || picked
 }
 
-export function AddMovieForm() {
+export function AddMovieForm({
+	mode = 'add',
+	initialData,
+	movieId,
+}: {
+	mode?: 'add' | 'edit'
+	initialData?: Partial<MovieFormData>
+	movieId?: string
+} = {}) {
 	const router = useRouter()
+
+	const [isSearching, setIsSearching] = useState(false)
+	const [searchResults, setSearchResults] = useState<TMDBMovieDetails[]>([])
+	const [selectedMovieId, setSelectedMovieId] = useState<number>()
+	const [showResults, setShowResults] = useState(false)
+	const [isSubmitting, setIsSubmitting] = useState(false)
+	const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
+
 	const {
 		control,
 		handleSubmit,
 		watch,
 		setValue,
+		reset,
 		formState: { errors },
 	} = useForm<MovieFormData>({
 		defaultValues: {
@@ -74,12 +93,13 @@ export function AddMovieForm() {
 		},
 	})
 
-	const [isSearching, setIsSearching] = useState(false)
-	const [searchResults, setSearchResults] = useState<TMDBMovieDetails[]>([])
-	const [selectedMovieId, setSelectedMovieId] = useState<number>()
-	const [showResults, setShowResults] = useState(false)
-	const [isSubmitting, setIsSubmitting] = useState(false)
-	const [message, setMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
+	// Populate form with initial data when in edit mode and clear any messages
+	useEffect(() => {
+		if (mode === 'edit' && initialData) {
+			reset(initialData as MovieFormData)
+			setMessage(null)
+		}
+	}, [mode, initialData, reset])
 
 	const watchName = watch('watch_name')
 	const watchDate = watch('watch_date')
@@ -134,12 +154,19 @@ export function AddMovieForm() {
 				craig_pick: formatPicked(data.craig_pick),
 			}
 
-			const response = await fetch('/api/movies', {
-				method: 'POST',
+			const isEditMode = mode === 'edit' && movieId
+			const endpoint = isEditMode ? '/api/movies' : '/api/movies'
+			const method = isEditMode ? 'PATCH' : 'POST'
+			const bodyData = isEditMode
+				? { ...formattedData, movieId }
+				: formattedData
+
+			const response = await fetch(endpoint, {
+				method,
 				headers: {
 					'Content-Type': 'application/json',
 				},
-				body: JSON.stringify(formattedData),
+				body: JSON.stringify(bodyData),
 			})
 
 			if (!response.ok) {
@@ -147,28 +174,28 @@ export function AddMovieForm() {
 				if (response.status === 401) {
 					setMessage({
 						type: 'error',
-						text: 'You must be logged in to add a movie',
+						text: 'You must be logged in to ' + (isEditMode ? 'update' : 'add') + ' a movie',
 					})
 					router.push('/login')
 					return
 				}
-				throw new Error(errorData.error || 'Failed to add movie')
+				throw new Error(errorData.error || `Failed to ${isEditMode ? 'update' : 'add'} movie`)
 			}
 
 			const result = await response.json()
 			setMessage({
 				type: 'success',
-				text: 'Movie added successfully! Redirecting...',
+				text: `Movie ${isEditMode ? 'updated' : 'added'} successfully! Redirecting...`,
 			})
 
-			// Redirect to the new movie page after a brief delay
+			// Redirect to the movie page after a brief delay
 			setTimeout(() => {
 				router.push(`/movie/${result.movie.slug}`)
 			}, 1500)
 		} catch (error) {
 			console.error('Error submitting form:', error)
 			const errorText =
-				error instanceof Error ? error.message : 'Failed to add movie'
+				error instanceof Error ? error.message : `Failed to ${mode === 'edit' ? 'update' : 'add'} movie`
 			setMessage({
 				type: 'error',
 				text: errorText,
@@ -270,6 +297,7 @@ export function AddMovieForm() {
 					)}
 				/>
 
+{mode === 'add' && (
 				<button
 					type="button"
 					onClick={handleTmdbSearch}
@@ -278,9 +306,10 @@ export function AddMovieForm() {
 				>
 					{isSearching ? 'Searching...' : 'Search TMDB'}
 				</button>
+			)}
 			</section>
 
-			{showResults && (
+			{showResults && mode === 'add' && (
 				<section id="tmdb-results">
 					<h2>Search Results</h2>
 					<TmdbResultsList
@@ -476,19 +505,19 @@ export function AddMovieForm() {
 				/>
 			</section>
 
-			{message && (
-				<div className={`message-banner message-${message.type}`}>
-					{message.text}
-				</div>
-			)}
+		{message && (
+			<div className={`message-banner message-${message.type}`}>
+				{message.text}
+			</div>
+		)}
 
-			<button
-				type="submit"
-				className="btn btn-primary"
-				disabled={isSubmitting}
-			>
-				{isSubmitting ? 'Adding Movie...' : 'Add Movie'}
-			</button>
-		</form>
+		<button
+			type="submit"
+			className="btn btn-primary"
+			disabled={isSubmitting}
+		>
+			{isSubmitting ? (mode === 'edit' ? 'Updating Movie...' : 'Adding Movie...') : (mode === 'edit' ? 'Update Movie' : 'Add Movie')}
+		</button>
+	</form>
 	)
 }
