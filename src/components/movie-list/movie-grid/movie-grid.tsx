@@ -2,7 +2,10 @@ import { getMovies } from '@/src/utils/supabase/queries'
 import MovieGridClient from './movie-grid-client'
 
 export async function MovieGrid() {
-	const movies = await getMovies()
+	const movies: Movie[] = (await getMovies()) || []
+	movies.sort((a, b) => {
+		return new Date(b.watch_date).getTime() - new Date(a.watch_date).getTime()
+	})
 
 	const yearList = [
 		'All',
@@ -13,10 +16,7 @@ export async function MovieGrid() {
 
 	return (
 		<section className="movie-grid__wrapper" aria-labelledby="movie-grid">
-			<MovieGridClient
-				movies={movies?.reverse() || []}
-				yearList={yearList as number[]}
-			/>
+			<MovieGridClient movies={movies || []} yearList={yearList as number[]} />
 		</section>
 	)
 }
